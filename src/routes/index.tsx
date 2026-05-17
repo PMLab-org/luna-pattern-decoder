@@ -285,10 +285,13 @@ function Index() {
               />
               <div>
                 <p className="text-sm leading-relaxed text-foreground">
-                  "We're building Luna with the women who needed it ten years ago. Every entry teaches us something."
+                  When I began experiencing my own perimenopause symptoms, I was surprised by how scattered, shallow, and confusing the available information was. If I felt lost — even with a medical background — I knew countless women must be feeling the same.
                 </p>
-                <p className="mt-2 text-xs text-muted-foreground">
-                  Dr. Maya Rivers — Founder, PM Lab
+                <p className="mt-3 text-sm leading-relaxed text-foreground">
+                  That's why I created The Perimenopause Lab. A space built to make this transition make sense. A space for real guidance, deeper education, and the next generation of tools — including an AI companion — to help you decode your symptoms and feel confident in your body again.
+                </p>
+                <p className="mt-3 text-xs text-muted-foreground">
+                  Daniella Remy — Founder, The Perimenopause Lab
                 </p>
               </div>
             </div>
