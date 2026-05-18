@@ -1,18 +1,20 @@
-Update the "Help shape the future of perimenopause care" section in `src/routes/index.tsx`:
+In the "Help shape the future of menopause care" section of `src/routes/index.tsx`, rebalance the two columns so the founder card visually aligns with the three feedback/impact/protection cards on the right.
 
-1. **Heading**: "perimenopause care" → "menopause care".
+Changes:
 
-2. **Add subhead** beneath heading:
-   > Luna and The Perimenopause Lab are in active development, already used by over 90 women—and we're building the next version directly from your feedback.
+1. **Extend the heading + subhead area** so it carries more visual weight:
+   - Keep the heading as-is.
+   - Expand the subhead into two short paragraphs for better readability and vertical rhythm. Suggested copy:
+     - "Luna and The Perimenopause Lab are in active development, already used by over 90 women in a live beta."
+     - "We're building the next version directly from your feedback — every story shapes what comes next."
+   - Add a small label/eyebrow above the heading (e.g., "Live beta · Co-created with you") for extra height and signal.
 
-3. **Founder block**: append bridging paragraph after existing copy:
-   > Right now, Luna is in a live beta with women like you. Every conversation and every note you share helps us make this experience better for the next woman who comes through.
+2. **Align columns vertically**:
+   - Change the grid wrapper from `md:items-center` to `md:items-stretch` so both columns share full height.
+   - Make the left column a flex column so the founder card can stretch.
+   - Make the founder card grow to fill available height (`flex-1`) so its bottom edge aligns with the bottom of the right column (cards + CTA).
+   - Adjust grid ratio from `md:grid-cols-[1fr_1.4fr]` to `md:grid-cols-2` so columns are balanced.
 
-4. **Three cards** — update body copy:
-   - *Your Feedback is Read*: "Every message goes to a real person on our team. We review beta feedback weekly and share what's changing because of it."
-   - *You'll See Your Impact*: "You'll get updates on which patterns in women's stories are shaping each new release—so you can see how your experience is moving the product forward."
-   - *You're Protected*: "Your story is yours. Entries are encrypted, never sold, and never used to train external models—and you can opt out or delete your data anytime."
+3. **Inside the founder card**: keep the existing 3 paragraphs and attribution, but allow vertical breathing room (`justify-between` on inner content) so the card feels intentional when stretched, not empty.
 
-5. **Add CTA button** below the cards (centered), matching the hero "Start Your First Entry" button — gradient-luna background, links to `#start`.
-
-Pure copy/markup edits, no logic changes.
+No copy is removed; only the subhead is lightly expanded and one optional eyebrow added. No logic changes.
