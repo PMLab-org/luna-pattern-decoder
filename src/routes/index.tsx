@@ -272,8 +272,11 @@ function Index() {
         <div className="mx-auto grid max-w-[1200px] gap-12 md:grid-cols-[1fr_1.4fr] md:items-center">
           <div>
             <h2 className="text-3xl font-semibold tracking-tight md:text-5xl">
-              Help shape the future of <span className="text-gradient-luna">perimenopause care</span>
+              Help shape the future of <span className="text-gradient-luna">menopause care</span>
             </h2>
+            <p className="mt-5 text-muted-foreground">
+              Luna and The Perimenopause Lab are in active development, already used by over 90 women—and we're building the next version directly from your feedback.
+            </p>
             <div className="mt-8 flex items-start gap-4 rounded-2xl border border-border bg-card p-5 shadow-[var(--shadow-card)]">
               <img
                 src={founderImg}
@@ -290,26 +293,40 @@ function Index() {
                 <p className="mt-3 text-sm leading-relaxed text-foreground">
                   That's why I created The Perimenopause Lab. A space built to make this transition make sense. A space for real guidance, deeper education, and the next generation of tools — including an AI companion — to help you decode your symptoms and feel confident in your body again.
                 </p>
+                <p className="mt-3 text-sm leading-relaxed text-foreground">
+                  Right now, Luna is in a live beta with women like you. Every conversation and every note you share helps us make this experience better for the next woman who comes through.
+                </p>
                 <p className="mt-3 text-xs text-muted-foreground">
                   Daniella Remy — Founder, The Perimenopause Lab
                 </p>
               </div>
             </div>
           </div>
-          <div className="grid gap-4 sm:grid-cols-3">
-            {[
-              { icon: HeartHandshake, title: "Your Feedback is Read", body: "Every note reaches a human on our team. We reply." },
-              { icon: Eye, title: "You'll See Your Impact", body: "We share which patterns shape our next release." },
-              { icon: ShieldCheck, title: "You're Protected", body: "Your story is yours. Always private, never sold." },
-            ].map((c) => (
-              <div key={c.title} className="rounded-2xl border border-border bg-card p-6">
-                <div className="grid h-10 w-10 place-items-center rounded-lg bg-accent text-accent-foreground">
-                  <c.icon className="h-5 w-5" />
+          <div>
+            <div className="grid gap-4 sm:grid-cols-3">
+              {[
+                { icon: HeartHandshake, title: "Your Feedback is Read", body: "Every message goes to a real person on our team. We review beta feedback weekly and share what's changing because of it." },
+                { icon: Eye, title: "You'll See Your Impact", body: "You'll get updates on which patterns in women's stories are shaping each new release—so you can see how your experience is moving the product forward." },
+                { icon: ShieldCheck, title: "You're Protected", body: "Your story is yours. Entries are encrypted, never sold, and never used to train external models—and you can opt out or delete your data anytime." },
+              ].map((c) => (
+                <div key={c.title} className="rounded-2xl border border-border bg-card p-6">
+                  <div className="grid h-10 w-10 place-items-center rounded-lg bg-accent text-accent-foreground">
+                    <c.icon className="h-5 w-5" />
+                  </div>
+                  <h3 className="mt-4 text-base font-semibold">{c.title}</h3>
+                  <p className="mt-2 text-sm text-muted-foreground">{c.body}</p>
                 </div>
-                <h3 className="mt-4 text-base font-semibold">{c.title}</h3>
-                <p className="mt-2 text-sm text-muted-foreground">{c.body}</p>
-              </div>
-            ))}
+              ))}
+            </div>
+            <div className="mt-8 flex justify-center">
+              <Button
+                asChild
+                size="lg"
+                className="h-12 min-w-[200px] bg-gradient-luna px-6 text-base text-primary-foreground shadow-[var(--shadow-soft)] hover:opacity-90"
+              >
+                <a href="#start">Start Your First Entry</a>
+              </Button>
+            </div>
           </div>
         </div>
       </section>
