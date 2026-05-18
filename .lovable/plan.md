@@ -1,19 +1,17 @@
-Update the “Help shape the future of menopause care” section layout only:
+## Changes to `src/routes/index.tsx`
 
-1. Make the section intro full-width
-   - Move the “Live beta · Co-created with you” pill, heading, and the beta sentence into a full-width top block above the cards.
-   - Let the heading read visually like a page-wide section heading, spanning left to right within the existing 1200px content width.
-   - Keep the sentence directly underneath: “Luna and The Perimenopause Lab are in active development, already used by over 90 women in a live beta.”
-   - Remove the extra “We’re building the next version…” paragraph from this top intro if needed to keep the section cleaner.
+### 1. "How Luna works" section — add caption under the 3 cards
 
-2. Align Daniela’s box with the three cards
-   - Under the intro, create one aligned grid: Daniela’s founder box on the left and the three benefit cards on the right.
-   - The top of Daniela’s box and the top of the three cards will line up exactly.
+Keep the existing subhead ("Three steps from feeling unheard to walking in with clarity.") unchanged. Below the 3-card grid, add a small centered caption:
 
-3. Make the three cards compact again
-   - Remove the forced full-height stretching from the right-side cards.
-   - Use compact card padding and natural content height so there is much less white space.
-   - Keep the three cards in a 3-column row on desktop, stacking responsively on smaller screens.
+> Your first pattern report unlocks at check-in five. Ongoing entries help Luna track how your symptoms connect and change over time.
 
-4. Keep the CTA below the whole section
-   - Leave “Start Your First Entry” centered below the aligned card grid.
+Styling: centered, `text-sm text-muted-foreground`, `mt-10` from the grid, constrained to `max-w-2xl mx-auto`.
+
+### 2. FAQ — update "How does the 5-conversation process work?"
+
+Replace the current answer with:
+
+> Five check-ins unlock your first meaningful pattern report. Ongoing entries help Luna track how your symptoms connect and change over time. Each entry can be as quick or as detailed as you need, and works on any phone or computer. Most women complete the 5-conversation pattern map over 1–2 weeks.
+
+No other content, layout, or logic changes.

@@ -51,7 +51,7 @@ const faqs = [
   },
   {
     q: "How does the 5-conversation process work?",
-    a: "Each check-in takes about 5 minutes and works on any phone or computer. Most women complete the 5-conversation pattern map over 1–2 weeks. After five check-ins, Luna builds a personalized map showing which body systems — hormonal, metabolic, nervous, immune — appear most under burden right now.",
+    a: "Five check-ins unlock your first meaningful pattern report. Ongoing entries help Luna track how your symptoms connect and change over time. Each entry can be as quick or as detailed as you need, and works on any phone or computer. Most women complete the 5-conversation pattern map over 1–2 weeks.",
   },
   {
     q: "Is Luna a replacement for my doctor?",
@@ -231,6 +231,9 @@ function Index() {
               </div>
             ))}
           </div>
+          <p className="mx-auto mt-10 max-w-2xl text-center text-sm text-muted-foreground">
+            Your first pattern report unlocks at check-in five. Ongoing entries help Luna track how your symptoms connect and change over time.
+          </p>
         </div>
       </section>
 
