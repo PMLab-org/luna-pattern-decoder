@@ -119,7 +119,7 @@ function Index() {
                 Start Your First Entry
               </Button>
               <p className="text-sm text-muted-foreground">
-                Start with 5 quick check-ins to unlock your first symptom pattern map. Keep going to track how those patterns change over time.
+                Five check-ins unlock your first meaningful pattern report. Ongoing entries help Luna track how your symptoms connect and change over time.
               </p>
             </div>
           </div>
