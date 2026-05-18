@@ -1,15 +1,19 @@
-Re-fix alignment in the "Help shape the future of menopause care" section in `src/routes/index.tsx`:
+Update the “Help shape the future of menopause care” section layout only:
 
-The intent: Daniella's founder card should align top + bottom with the row of three cards (Feedback / Impact / Protected) — not stretch past them to match the CTA height.
+1. Make the section intro full-width
+   - Move the “Live beta · Co-created with you” pill, heading, and the beta sentence into a full-width top block above the cards.
+   - Let the heading read visually like a page-wide section heading, spanning left to right within the existing 1200px content width.
+   - Keep the sentence directly underneath: “Luna and The Perimenopause Lab are in active development, already used by over 90 women in a live beta.”
+   - Remove the extra “We’re building the next version…” paragraph from this top intro if needed to keep the section cleaner.
 
-Changes:
+2. Align Daniela’s box with the three cards
+   - Under the intro, create one aligned grid: Daniela’s founder box on the left and the three benefit cards on the right.
+   - The top of Daniela’s box and the top of the three cards will line up exactly.
 
-1. **Move the "Start Your First Entry" CTA out** of the right column. Place it below the whole grid, centered, so it no longer adds height to the right side.
+3. Make the three cards compact again
+   - Remove the forced full-height stretching from the right-side cards.
+   - Use compact card padding and natural content height so there is much less white space.
+   - Keep the three cards in a 3-column row on desktop, stacking responsively on smaller screens.
 
-2. **Right column becomes just the 3 cards** with `h-full` on the grid so the cards stretch to fill column height.
-
-3. **Left column stays as flex column**, founder card keeps `flex-1` — now its bottom will land exactly at the bottom of the 3 cards row, since both columns share the same height (`md:items-stretch`).
-
-4. Keep all copy as-is (eyebrow, heading, two-paragraph subhead, founder card content).
-
-Result: heading + subhead sit at the top-left, founder card occupies the lower-left and aligns visually with the 3 cards on the right; CTA sits centered below the grid.
+4. Keep the CTA below the whole section
+   - Leave “Start Your First Entry” centered below the aligned card grid.

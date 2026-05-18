@@ -277,21 +277,19 @@ function Index() {
 
       {/* CO-CREATION */}
       <section className="px-6 py-16 md:py-24">
-        <div className="mx-auto grid max-w-[1200px] gap-12 md:grid-cols-2 md:items-stretch">
-          <div className="flex flex-col">
-            <span className="inline-flex w-fit items-center gap-2 rounded-full bg-accent px-3 py-1 text-xs font-medium text-accent-foreground">
-              <Sparkles className="h-3.5 w-3.5" /> Live beta · Co-created with you
-            </span>
-            <h2 className="mt-4 text-3xl font-semibold tracking-tight md:text-5xl">
-              Help shape the future of <span className="text-gradient-luna">menopause care</span>
-            </h2>
-            <p className="mt-5 text-muted-foreground">
-              Luna and The Perimenopause Lab are in active development, already used by over 90 women in a live beta.
-            </p>
-            <p className="mt-3 text-muted-foreground">
-              We're building the next version directly from your feedback — every story shapes what comes next.
-            </p>
-            <div className="mt-8 flex flex-1 items-start gap-4 rounded-2xl border border-border bg-card p-5 shadow-[var(--shadow-card)]">
+        <div className="mx-auto max-w-[1200px]">
+          <span className="inline-flex w-fit items-center gap-2 rounded-full bg-accent px-3 py-1 text-xs font-medium text-accent-foreground">
+            <Sparkles className="h-3.5 w-3.5" /> Live beta · Co-created with you
+          </span>
+          <h2 className="mt-4 text-3xl font-semibold tracking-tight md:text-5xl">
+            Help shape the future of <span className="text-gradient-luna">menopause care</span>
+          </h2>
+          <p className="mt-5 max-w-3xl text-muted-foreground">
+            Luna and The Perimenopause Lab are in active development, already used by over 90 women in a live beta.
+          </p>
+
+          <div className="mt-10 grid gap-6 md:grid-cols-2 md:items-start">
+            <div className="flex items-start gap-4 rounded-2xl border border-border bg-card p-5 shadow-[var(--shadow-card)]">
               <img
                 src={founderImg}
                 alt="Portrait of Luna's founder"
@@ -300,7 +298,7 @@ function Index() {
                 loading="lazy"
                 className="h-14 w-14 rounded-full object-cover"
               />
-              <div className="flex h-full flex-col justify-between">
+              <div className="flex flex-col">
                 <div>
                 <p className="text-sm leading-relaxed text-foreground">
                   When I began experiencing my own perimenopause symptoms, I was surprised by how scattered, shallow, and confusing the available information was. If I felt lost — even with a medical background — I knew countless women must be feeling the same.
@@ -317,20 +315,18 @@ function Index() {
                 </p>
               </div>
             </div>
-          </div>
-          <div className="flex h-full flex-col">
-            <div className="grid h-full gap-4 sm:grid-cols-3">
+            <div className="grid gap-4 sm:grid-cols-3">
               {[
                 { icon: HeartHandshake, title: "Your Feedback is Read", body: "Every message goes to a real person on our team. We review beta feedback weekly and share what's changing because of it." },
                 { icon: Eye, title: "You'll See Your Impact", body: "You'll get updates on which patterns in women's stories are shaping each new release—so you can see how your experience is moving the product forward." },
                 { icon: ShieldCheck, title: "You're Protected", body: "Your story is yours. Entries are encrypted, never sold, and never used to train external models—and you can opt out or delete your data anytime." },
               ].map((c) => (
-                <div key={c.title} className="flex h-full flex-col rounded-2xl border border-border bg-card p-6">
-                  <div className="grid h-10 w-10 place-items-center rounded-lg bg-accent text-accent-foreground">
-                    <c.icon className="h-5 w-5" />
+                <div key={c.title} className="rounded-2xl border border-border bg-card p-5">
+                  <div className="grid h-9 w-9 place-items-center rounded-lg bg-accent text-accent-foreground">
+                    <c.icon className="h-4.5 w-4.5" />
                   </div>
-                  <h3 className="mt-4 text-base font-semibold">{c.title}</h3>
-                  <p className="mt-2 text-sm text-muted-foreground">{c.body}</p>
+                  <h3 className="mt-3 text-sm font-semibold">{c.title}</h3>
+                  <p className="mt-1.5 text-xs leading-relaxed text-muted-foreground">{c.body}</p>
                 </div>
               ))}
             </div>
