@@ -198,7 +198,7 @@ function Index() {
               {
                 icon: MessageCircle,
                 title: "Tell Luna what's going on",
-                body: "Short conversations, no forms. Speak the way you'd describe it to a friend who actually gets it.",
+                body: "Short conversations, no forms. Speak or type the way you'd describe it to a friend who actually gets it.",
               },
               {
                 icon: Network,
