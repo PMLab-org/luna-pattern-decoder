@@ -203,7 +203,7 @@ function Index() {
               {
                 icon: Network,
                 title: "See what may be connected",
-                body: "Luna maps your symptoms across systems — hormonal, nervous, metabolic — to surface the underlying pattern.",
+                body: "Luna helps you spot patterns across sleep, mood, energy, hormones, and more.",
               },
               {
                 icon: Stethoscope,
