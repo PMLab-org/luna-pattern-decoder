@@ -123,7 +123,7 @@ function Index() {
       <section className="px-6 py-16 md:py-24">
         <div className="mx-auto max-w-[1200px]">
           <h2 className="max-w-3xl text-3xl font-semibold tracking-tight md:text-5xl">
-            Most trackers give you data. <span className="text-gradient-luna">Luna gives you answers.</span>
+            Most trackers give you data. <span className="text-gradient-luna">Luna helps you see what it means.</span>
           </h2>
           <div className="mt-12 grid gap-6 md:grid-cols-2">
             <div className="rounded-2xl border border-border bg-card p-8 shadow-[var(--shadow-card)]">
