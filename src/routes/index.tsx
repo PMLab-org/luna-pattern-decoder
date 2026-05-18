@@ -105,11 +105,11 @@ function Index() {
               <Sparkles className="h-3.5 w-3.5" /> AI pattern mapping for menopause
             </span>
             <h1 className="mt-5 text-4xl font-semibold leading-[1.05] tracking-tight md:text-6xl">
-              Your symptoms are not random. They form a pattern.{" "}
-              <span className="text-gradient-luna">We map the pattern.</span>
+              Most apps track symptoms.{" "}
+              <span className="text-gradient-luna">We tell you what they mean.</span>
             </h1>
             <p className="mt-5 max-w-xl text-lg text-muted-foreground md:text-xl">
-              Luna helps you log symptoms through simple AI check-ins and shows which body systems may be under stress.
+              Your symptoms are not random. They form a pattern. Luna reveals it so you know what to do.
             </p>
             <div className="mt-8 flex flex-col items-start gap-3">
               <Button
