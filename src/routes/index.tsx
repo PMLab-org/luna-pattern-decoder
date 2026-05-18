@@ -119,7 +119,7 @@ function Index() {
                 Start Your First Entry
               </Button>
               <p className="text-sm text-muted-foreground">
-                Just 5 check-ins. No forms. Your map unlocks as you go.
+                Start with 5 quick check-ins to unlock your first symptom pattern map. Keep going to track how those patterns change over time.
               </p>
             </div>
           </div>
