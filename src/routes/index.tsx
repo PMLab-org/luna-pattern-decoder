@@ -101,7 +101,7 @@ function Index() {
               <span className="text-gradient-luna">We map the pattern.</span>
             </h1>
             <p className="mt-5 max-w-xl text-lg text-muted-foreground md:text-xl">
-              After 5 conversations with Luna, you'll see which systems are under burden.
+              Luna helps you log symptoms through simple AI check-ins and shows which body systems may be under stress.
             </p>
             <div className="mt-8 flex flex-col items-start gap-3">
               <Button
