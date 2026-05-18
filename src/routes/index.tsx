@@ -258,7 +258,7 @@ function Index() {
               {
                 icon: Lock,
                 title: "Privacy-First",
-                body: "Luna and PM Lab are built with industry-standard safeguards for health information used in clinical care. You stay in control at every step: participation in research is strictly opt-in and de-identified, your data is encrypted in transit and at rest, and you can export or delete your information anytime. Your data is never sold or shared without your explicit consent.",
+                body: "Luna and PM Lab are built with the same industry-standard safeguards trusted to protect health information in clinical care, so your story stays private, secure, and fully yours.",
               },
               {
                 icon: Stethoscope,
