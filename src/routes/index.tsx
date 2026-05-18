@@ -94,7 +94,7 @@ function Index() {
         <div className="mx-auto grid max-w-[1200px] items-center gap-12 md:grid-cols-2">
           <div>
             <span className="inline-flex items-center gap-2 rounded-full bg-accent px-3 py-1 text-xs font-medium text-accent-foreground">
-              <Sparkles className="h-3.5 w-3.5" /> AI for perimenopause
+              <Sparkles className="h-3.5 w-3.5" /> AI pattern mapping for menopause
             </span>
             <h1 className="mt-5 text-4xl font-semibold leading-[1.05] tracking-tight md:text-6xl">
               Your symptoms are not random. They form a pattern.{" "}
