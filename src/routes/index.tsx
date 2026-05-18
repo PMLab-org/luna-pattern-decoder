@@ -354,7 +354,7 @@ function Index() {
             </Button>
             <a
               href="#"
-              className="text-sm text-primary-foreground/90 underline-offset-4 hover:underline"
+              className="text-sm text-primary-foreground underline underline-offset-4"
             >
               Are you a clinician?
             </a>
