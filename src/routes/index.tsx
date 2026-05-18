@@ -318,14 +318,14 @@ function Index() {
               </div>
             </div>
           </div>
-          <div>
-            <div className="grid gap-4 sm:grid-cols-3">
+          <div className="flex h-full flex-col">
+            <div className="grid h-full gap-4 sm:grid-cols-3">
               {[
                 { icon: HeartHandshake, title: "Your Feedback is Read", body: "Every message goes to a real person on our team. We review beta feedback weekly and share what's changing because of it." },
                 { icon: Eye, title: "You'll See Your Impact", body: "You'll get updates on which patterns in women's stories are shaping each new release—so you can see how your experience is moving the product forward." },
                 { icon: ShieldCheck, title: "You're Protected", body: "Your story is yours. Entries are encrypted, never sold, and never used to train external models—and you can opt out or delete your data anytime." },
               ].map((c) => (
-                <div key={c.title} className="rounded-2xl border border-border bg-card p-6">
+                <div key={c.title} className="flex h-full flex-col rounded-2xl border border-border bg-card p-6">
                   <div className="grid h-10 w-10 place-items-center rounded-lg bg-accent text-accent-foreground">
                     <c.icon className="h-5 w-5" />
                   </div>
@@ -334,16 +334,16 @@ function Index() {
                 </div>
               ))}
             </div>
-            <div className="mt-8 flex justify-center">
-              <Button
-                asChild
-                size="lg"
-                className="h-12 min-w-[200px] bg-gradient-luna px-6 text-base text-primary-foreground shadow-[var(--shadow-soft)] hover:opacity-90"
-              >
-                <a href="#start">Start Your First Entry</a>
-              </Button>
-            </div>
           </div>
+        </div>
+        <div className="mx-auto mt-10 flex max-w-[1200px] justify-center">
+          <Button
+            asChild
+            size="lg"
+            className="h-12 min-w-[200px] bg-gradient-luna px-6 text-base text-primary-foreground shadow-[var(--shadow-soft)] hover:opacity-90"
+          >
+            <a href="#start">Start Your First Entry</a>
+          </Button>
         </div>
       </section>
 

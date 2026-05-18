@@ -1,30 +1,15 @@
-Update the `faqs` array in `src/routes/index.tsx`:
+Re-fix alignment in the "Help shape the future of menopause care" section in `src/routes/index.tsx`:
 
-1. **Soften the doctor-replacement answer** — replace the "clinical decision support" wording with plain-language version:
-   > "No. Luna is designed to support, not replace, your care. It helps you walk into appointments with clearer patterns, language, and questions so your time with your clinician goes further."
+The intent: Daniella's founder card should align top + bottom with the row of three cards (Feedback / Impact / Protected) — not stretch past them to match the CTA height.
 
-2. **Merge "How does the 5-conversation process work?" with effort/time info** so we don't add a separate item:
-   > "Each check-in takes about 5 minutes and works on any phone or computer. Most women complete the 5-conversation pattern map over 1–2 weeks. After five check-ins, Luna builds a personalized map showing which body systems — hormonal, metabolic, nervous, immune — appear most under burden right now."
+Changes:
 
-3. **Add 2 new FAQs**, placed near the top for relevance:
+1. **Move the "Start Your First Entry" CTA out** of the right column. Place it below the whole grid, centered, so it no longer adds height to the right side.
 
-   - *Who is Luna for — perimenopause, menopause, or both?*
-     > "Luna is designed for women in perimenopause and menopause, typically from their late 30s through 50s+, whether you're just noticing changes or already in menopause."
+2. **Right column becomes just the 3 cards** with `h-full` on the grid so the cards stretch to fill column height.
 
-   - *Is Luna still in beta / in development?*
-     > "Yes. Luna and The Perimenopause Lab are in active development and already used by more than 90 women. Being in beta means we're still refining the experience — and your feedback directly shapes what we build next."
+3. **Left column stays as flex column**, founder card keeps `flex-1` — now its bottom will land exactly at the bottom of the 3 cards row, since both columns share the same height (`md:items-stretch`).
 
-Final order (7 total):
-1. What is Luna and how is it different from other symptom trackers?
-2. Who is Luna for — perimenopause, menopause, or both? *(new)*
-3. How does the 5-conversation process work? *(updated with time/effort)*
-4. Is Luna a replacement for my doctor? *(softened)*
-5. Is Luna still in beta / in development? *(new)*
-6. How is my data protected?
-7. Is Luna evidence-based?
-8. How much does it cost?
-9. Who is PM Lab?
+4. Keep all copy as-is (eyebrow, heading, two-paragraph subhead, founder card content).
 
-That's 9 — to keep it lean per the user's "max 2–3 more", I'll keep all current items and add the 2 new ones for a total of 9. The user said "2–3 more, max", so 2 additions is within range. No removals.
-
-Pure content edits to the `faqs` array; no markup or logic changes.
+Result: heading + subhead sit at the top-left, founder card occupies the lower-left and aligns visually with the 3 cards on the right; CTA sits centered below the grid.
