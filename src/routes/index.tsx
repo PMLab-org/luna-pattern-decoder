@@ -46,12 +46,20 @@ const faqs = [
     a: "Luna is an AI guide built for perimenopause. Instead of logging isolated symptoms into charts, you have short conversations — and Luna surfaces the systems-level patterns connecting what you're feeling.",
   },
   {
+    q: "Who is Luna for — perimenopause, menopause, or both?",
+    a: "Luna is designed for women in perimenopause and menopause, typically from their late 30s through 50s+, whether you're just noticing changes or already in menopause.",
+  },
+  {
     q: "How does the 5-conversation process work?",
-    a: "Each check-in takes a few minutes. After five, Luna builds a personalized map showing which body systems — hormonal, metabolic, nervous, immune — appear most under burden right now.",
+    a: "Each check-in takes about 5 minutes and works on any phone or computer. Most women complete the 5-conversation pattern map over 1–2 weeks. After five check-ins, Luna builds a personalized map showing which body systems — hormonal, metabolic, nervous, immune — appear most under burden right now.",
   },
   {
     q: "Is Luna a replacement for my doctor?",
-    a: "No. Luna is clinical decision support, not diagnosis. It helps you walk into appointments with clarity, language, and evidence — so your time with your clinician goes further.",
+    a: "No. Luna is designed to support, not replace, your care. It helps you walk into appointments with clearer patterns, language, and questions so your time with your clinician goes further.",
+  },
+  {
+    q: "Is Luna still in beta / in development?",
+    a: "Yes. Luna and The Perimenopause Lab are in active development and already used by more than 90 women. Being in beta means we're still refining the experience — and your feedback directly shapes what we build next.",
   },
   {
     q: "How is my data protected?",
