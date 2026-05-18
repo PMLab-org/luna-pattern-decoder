@@ -242,17 +242,17 @@ function Index() {
               {
                 icon: BookOpen,
                 title: "Evidence-Based",
-                body: "Frameworks grounded in peer-reviewed perimenopause research, co-designed with clinicians.",
+                body: "Frameworks grounded in functional medicine principles and established scientific and medical research.",
               },
               {
                 icon: Lock,
                 title: "Privacy-First",
-                body: "Encrypted, never sold, never used to train external models. Export or delete anytime.",
+                body: "Luna and PM Lab are built with industry-standard safeguards for health information used in clinical care. You stay in control at every step: participation in research is strictly opt-in and de-identified, your data is encrypted in transit and at rest, and you can export or delete your information anytime. Your data is never sold or shared without your explicit consent.",
               },
               {
                 icon: Stethoscope,
                 title: "Clinical Decision Support",
-                body: "Designed to support — not replace — the conversation with your healthcare provider.",
+                body: "Designed to support the conversation with your healthcare provider. The summary generated after continuous conversations provides precise, measurable tracking of subjective symptoms reported over time, enabling a clear understanding of baseline assessment and post-treatment outcomes, as well as an evidence-based priority list of the most effective next steps personalized to the patient's case.",
               },
             ].map((p) => (
               <div key={p.title} className="rounded-2xl bg-card/80 p-7 backdrop-blur">
