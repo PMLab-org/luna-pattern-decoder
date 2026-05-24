@@ -1,4 +1,4 @@
-import { createFileRoute } from "@tanstack/react-router";
+import { createFileRoute, Link } from "@tanstack/react-router";
 import { Button } from "@/components/ui/button";
 import heroWoman from "@/assets/hero-woman.jpg";
 import {
@@ -470,8 +470,11 @@ function Index() {
       <section className="px-6 pb-20">
         <div className="mx-auto max-w-[1200px] overflow-hidden rounded-3xl bg-gradient-luna px-6 py-16 text-center text-primary-foreground md:px-12 md:py-24">
           <h2 className="mx-auto max-w-2xl text-3xl font-semibold leading-tight tracking-tight md:text-5xl">
-            Your body is already telling you what it needs. Luna helps you listen.
+            Your body is talking. Let's listen.
           </h2>
+          <p className="mx-auto mt-4 max-w-2xl text-base text-primary-foreground/85 md:text-lg">
+            Tell Luna what's going on and Luna will connect symptom data and help you see what it means.
+          </p>
           <div className="mt-8 flex flex-col items-center gap-4">
             <Button
               size="lg"
@@ -479,12 +482,12 @@ function Index() {
             >
               Start Your First Entry
             </Button>
-            <a
-              href="#"
+            <Link
+              to="/for-clinicians"
               className="text-sm text-primary-foreground underline underline-offset-4"
             >
               Are you a clinician?
-            </a>
+            </Link>
           </div>
         </div>
       </section>
