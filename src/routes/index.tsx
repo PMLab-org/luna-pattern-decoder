@@ -257,12 +257,12 @@ function Index() {
               {
                 icon: Lock,
                 title: "Privacy-First",
-                body: "Luna and PM Lab are built with the same industry-standard safeguards trusted to protect health information in clinical care, so your story stays private, secure, and fully yours.",
+                body: "Luna is built with the same industry-standard safeguards trusted to protect health information in clinical care, so your story stays private, secure, and fully yours.",
               },
               {
                 icon: Stethoscope,
                 title: "Clinical Decision Support",
-                body: "Designed to support the conversation with your healthcare provider. The summary generated after continuous conversations provides precise, measurable tracking of subjective symptoms reported over time, enabling a clear understanding of baseline assessment and post-treatment outcomes, as well as an evidence-based priority list of the most effective next steps personalized to the patient's case.",
+                body: "Provides precise, measurable tracking of symptoms reported over time. Clinicians see baseline vs. post-treatment outcomes at a glance.",
               },
             ].map((p) => (
               <div key={p.title} className="rounded-2xl bg-card/80 p-7 backdrop-blur">
