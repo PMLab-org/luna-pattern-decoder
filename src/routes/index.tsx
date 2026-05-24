@@ -102,7 +102,10 @@ function Index() {
       <section id="start" className="px-6 py-14 md:py-24">
         <div className="mx-auto grid max-w-[1200px] items-center gap-12 md:grid-cols-2">
           <div>
-            <h1 className="text-4xl font-semibold leading-[1.05] tracking-tight md:text-6xl">
+            <span className="inline-flex w-fit items-center gap-2 rounded-full bg-accent px-3 py-1 text-xs font-medium text-accent-foreground">
+              <Sparkles className="h-3.5 w-3.5" /> Your body is talking. Let's listen.
+            </span>
+            <h1 className="mt-4 text-4xl font-semibold leading-[1.05] tracking-tight md:text-6xl">
               Most apps track symptoms.{" "}
               <span className="text-gradient-luna">We tell you what they mean.</span>
             </h1>
