@@ -58,23 +58,22 @@ function ForCliniciansPage() {
             </div>
           </div>
           <div className="md:col-span-5">
-            <div className="relative mx-auto aspect-[4/5] w-full max-w-[360px]">
-              {[
-                { src: reportPage3, rotate: "-7deg", tx: "-18%", ty: "-6%", z: 10 },
-                { src: reportPage2, rotate: "4deg", tx: "0%", ty: "0%", z: 20 },
-                { src: reportPage1, rotate: "-2deg", tx: "16%", ty: "8%", z: 30 },
-              ].map((p, i) => (
-                <img
-                  key={i}
-                  src={p.src}
-                  alt="Sample Luna clinical report page"
-                  className="absolute left-0 top-0 h-full w-full rounded-xl border border-border bg-card object-cover object-top shadow-lg"
-                  style={{
-                    transform: `translate(${p.tx}, ${p.ty}) rotate(${p.rotate})`,
-                    zIndex: p.z,
-                  }}
-                />
-              ))}
+            <div className="relative mx-auto aspect-[8.5/11] w-full max-w-[420px]">
+              <img
+                src={reportPage2}
+                alt="Sample Luna clinical report page"
+                className="absolute left-[-14%] top-[4%] z-10 h-[92%] w-[60%] rounded-xl border border-border bg-card object-cover object-top opacity-70 shadow-md"
+              />
+              <img
+                src={reportPage3}
+                alt="Sample Luna clinical report page"
+                className="absolute right-[-14%] top-[4%] z-10 h-[92%] w-[60%] rounded-xl border border-border bg-card object-cover object-top opacity-70 shadow-md"
+              />
+              <img
+                src={reportPage1}
+                alt="Sample Luna clinical report page"
+                className="absolute inset-x-0 top-0 z-20 mx-auto h-full w-[78%] rounded-xl border border-border bg-card object-cover object-top shadow-xl"
+              />
             </div>
           </div>
         </div>
