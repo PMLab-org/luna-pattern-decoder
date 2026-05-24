@@ -135,22 +135,54 @@ function Index() {
               <p className="text-sm font-medium uppercase tracking-wider text-muted-foreground">
                 Other trackers
               </p>
-              <ul className="mt-6 space-y-4 text-muted-foreground">
-                {[
-                  "Hot flashes — 3 today",
-                  "Sleep — 5h 42m",
-                  "Mood — 4/10",
-                  "Cycle day — 23",
-                  "Energy — low",
-                ].map((l) => (
-                  <li key={l} className="flex items-center justify-between border-b border-border/60 pb-3">
-                    <span>{l}</span>
-                    <span className="text-xs">Logged</span>
-                  </li>
-                ))}
-              </ul>
+
+              {/* Phone mockup */}
+              <div className="mt-6 flex justify-center">
+                <div className="relative w-full max-w-[260px] rounded-[2.25rem] border-[10px] border-foreground/85 bg-background shadow-[var(--shadow-soft)]">
+                  {/* Notch */}
+                  <div className="absolute left-1/2 top-0 z-10 h-5 w-20 -translate-x-1/2 rounded-b-2xl bg-foreground/85" />
+
+                  <div className="overflow-hidden rounded-[1.5rem] bg-background px-4 pb-5 pt-7">
+                    {/* Status bar */}
+                    <div className="flex items-center justify-between text-[10px] font-medium text-muted-foreground">
+                      <span>9:41</span>
+                      <div className="flex items-center gap-1">
+                        <span className="h-1.5 w-1.5 rounded-full bg-muted-foreground/70" />
+                        <span className="h-1.5 w-1.5 rounded-full bg-muted-foreground/70" />
+                        <span className="h-1.5 w-3 rounded-sm border border-muted-foreground/70" />
+                      </div>
+                    </div>
+
+                    {/* App header */}
+                    <div className="mt-3 flex items-center justify-between">
+                      <p className="text-sm font-semibold text-foreground">Tracker</p>
+                      <span className="h-6 w-6 rounded-lg bg-muted" />
+                    </div>
+
+                    {/* Log list */}
+                    <ul className="mt-4 space-y-2.5 text-muted-foreground">
+                      {[
+                        "Hot flashes — 3 today",
+                        "Sleep — 5h 42m",
+                        "Mood — 4/10",
+                        "Cycle day — 23",
+                        "Energy — low",
+                      ].map((l) => (
+                        <li
+                          key={l}
+                          className="flex items-center justify-between border-b border-border/60 pb-2 text-xs"
+                        >
+                          <span>{l}</span>
+                          <span className="text-[10px]">Logged</span>
+                        </li>
+                      ))}
+                    </ul>
+                  </div>
+                </div>
+              </div>
+
               <p className="mt-6 text-sm text-muted-foreground">
-                Numbers without narrative. You're left to connect the dots alone.
+                Numbers or charts without narrative. You are left to connect the dots alone.
               </p>
             </div>
 
@@ -179,7 +211,7 @@ function Index() {
                       <div className="h-full w-[60%] rounded-full bg-gradient-luna" />
                     </div>
                     <p className="mt-4 text-sm text-muted-foreground">
-                      Conversations become a map of which systems — hormonal, nervous, metabolic — are under burden right now.
+                      Conversations turn symptoms into a clearer picture of what may be going on.
                     </p>
                   </div>
                 </div>
