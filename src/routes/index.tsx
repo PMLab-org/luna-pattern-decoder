@@ -234,6 +234,8 @@ function Index() {
         </div>
       </section>
 
+      <PricingPreview />
+
       {/* TRUST */}
       <section className="px-6 py-16 md:py-24">
         <div
@@ -344,7 +346,7 @@ function Index() {
       </section>
 
       {/* FAQ */}
-      <section className="px-6 py-16 md:py-24">
+      <section id="faq" className="px-6 py-16 md:py-24">
         <div className="mx-auto max-w-3xl">
           <h2 className="text-center text-3xl font-semibold tracking-tight md:text-5xl">
             Questions, answered
@@ -391,12 +393,7 @@ function Index() {
         </div>
       </section>
 
-      <footer className="border-t border-border">
-        <div className="mx-auto flex max-w-[1200px] flex-col items-center justify-between gap-3 px-6 py-8 text-sm text-muted-foreground md:flex-row">
-          <span>© {new Date().getFullYear()} PM Lab. All rights reserved.</span>
-          <span>Luna is clinical decision support, not a diagnostic tool.</span>
-        </div>
-      </footer>
+      <SiteFooter />
     </main>
   );
 }
