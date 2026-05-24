@@ -4,8 +4,6 @@ import { SiteFooter } from "@/components/site-footer";
 import { Button } from "@/components/ui/button";
 import { ClipboardList, FileText, TrendingUp } from "lucide-react";
 import reportPage1 from "@/assets/clinician-report-1.png";
-import reportPage2 from "@/assets/clinician-report-2.png";
-import reportPage3 from "@/assets/clinician-report-3.png";
 import avatarMonique from "@/assets/clinician-monique.png";
 import avatarNegin from "@/assets/clinician-negin.png";
 import avatarZeynep from "@/assets/clinician-zeynep.png";
@@ -59,20 +57,14 @@ function ForCliniciansPage() {
           </div>
           <div className="md:col-span-5">
             <div className="relative mx-auto aspect-[8.5/11] w-full max-w-[420px]">
-              <img
-                src={reportPage2}
-                alt="Sample Luna clinical report page"
-                className="absolute left-[-14%] top-[4%] z-10 h-[92%] w-[60%] rounded-xl border border-border bg-card object-cover object-top opacity-70 shadow-md"
-              />
-              <img
-                src={reportPage3}
-                alt="Sample Luna clinical report page"
-                className="absolute right-[-14%] top-[4%] z-10 h-[92%] w-[60%] rounded-xl border border-border bg-card object-cover object-top opacity-70 shadow-md"
+              <div
+                aria-hidden
+                className="absolute inset-0 -z-10 translate-y-4 rounded-2xl bg-foreground/10 blur-2xl"
               />
               <img
                 src={reportPage1}
-                alt="Sample Luna clinical report page"
-                className="absolute inset-x-0 top-0 z-20 mx-auto h-full w-[78%] rounded-xl border border-border bg-card object-cover object-top shadow-xl"
+                alt="Sample Luna clinical report"
+                className="relative h-full w-full rounded-2xl border border-border bg-card object-cover object-top shadow-xl"
               />
             </div>
           </div>
