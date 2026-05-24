@@ -32,7 +32,7 @@ export const Route = createFileRoute("/")({
       {
         name: "description",
         content:
-          "Luna is an AI perimenopause symptom tracker that finds systems-level patterns. After 5 check-ins, see which systems are under burden.",
+          "Luna is an AI perimenopause companion that connects the dots between your symptoms. After 5 check-ins, see what your body is telling you.",
       },
       { property: "og:title", content: "Luna by PM Lab" },
       {
@@ -47,7 +47,7 @@ export const Route = createFileRoute("/")({
 const faqs = [
   {
     q: "What is Luna and how is it different from other symptom trackers?",
-    a: "Luna is an AI guide built for perimenopause. Instead of logging isolated symptoms into charts, you have short conversations — and Luna surfaces the systems-level patterns connecting what you're feeling.",
+    a: "Luna is an AI guide built for perimenopause. Instead of logging isolated symptoms into charts, you have short conversations — and Luna connects the dots between what you're feeling so it finally makes sense.",
   },
   {
     q: "Who is Luna for — perimenopause, menopause, or both?",
@@ -55,7 +55,7 @@ const faqs = [
   },
   {
     q: "How does the 5-conversation process work?",
-    a: "Five check-ins unlock your first meaningful pattern report. Ongoing entries help Luna track how your symptoms connect and change over time. Each entry can be as quick or as detailed as you need, and works on any phone or computer. Most women complete the 5-conversation pattern map over 1–2 weeks.",
+    a: "Five check-ins unlock your first meaningful pattern report. Ongoing entries help Luna track how your symptoms connect and change over time. Each entry can be as quick or as detailed as you need, and works on any phone or computer. Most women complete the 5 conversations, get a personalized summary of how your symptoms interact, and can download your first clinician-ready report over 1–2 weeks.",
   },
   {
     q: "Is Luna a replacement for my doctor?",
@@ -261,9 +261,9 @@ function Index() {
                     {/* Summary card */}
                     <div className="mt-4 rounded-xl border border-border/60 bg-muted/40 p-3">
                       <p className="text-[11px] font-semibold text-foreground">Your summary</p>
-                      <p className="text-[10px] font-medium text-muted-foreground">Cross-system analysis</p>
+                      <p className="text-[10px] font-medium text-muted-foreground">Your symptoms, connected</p>
                       <p className="mt-1.5 text-[10px] leading-snug text-foreground/80">
-                        Your results indicate a high burden in the Cortisol subsystem. For the next week, try the suggested practices and speak to your practitioner about next steps.
+                        Your stress patterns stand out this week. Try the suggested practices to feel more like yourself.
                       </p>
                     </div>
 
