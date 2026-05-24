@@ -1,5 +1,6 @@
 import { createFileRoute } from "@tanstack/react-router";
 import { Button } from "@/components/ui/button";
+import heroWoman from "@/assets/hero-woman.jpg";
 import {
   Accordion,
   AccordionContent,
@@ -120,7 +121,13 @@ function Index() {
               </p>
             </div>
           </div>
-          <ChatMockup />
+          <img
+            src={heroWoman}
+            alt="Woman at home reading her Luna pattern report with a quiet aha moment"
+            width={1024}
+            height={1280}
+            className="w-full h-auto rounded-2xl object-cover shadow-[var(--shadow-soft)] aspect-[4/5]"
+          />
         </div>
       </section>
 
