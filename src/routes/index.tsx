@@ -207,13 +207,12 @@ function Index() {
               </p>
             </div>
 
-            <div className="relative overflow-hidden rounded-2xl bg-gradient-luna p-[1.5px] shadow-[var(--shadow-soft)]">
-              <div className="rounded-[calc(1rem-1px)] bg-card p-8">
-                <p className="text-sm font-medium uppercase tracking-wider text-primary">
-                  Luna
-                </p>
+            <div className="rounded-2xl border border-border bg-card p-8 shadow-[var(--shadow-card)]">
+              <p className="text-sm font-medium uppercase tracking-wider text-primary">
+                Luna
+              </p>
 
-                <div className="mt-6 flex justify-center">
+              <div className="mt-6 flex justify-center">
                   <PhoneFrame>
                     {/* App header */}
                     <div className="flex items-center justify-between">
@@ -267,12 +266,11 @@ function Index() {
                       <span>Me</span>
                     </div>
                   </PhoneFrame>
-                </div>
-
-                <p className="mt-6 text-sm text-muted-foreground">
-                  Conversations turn symptoms into a clearer picture of what may be going on.
-                </p>
               </div>
+
+              <p className="mt-6 text-sm text-muted-foreground">
+                Conversations turn symptoms into a clearer picture of what may be going on.
+              </p>
             </div>
           </div>
         </div>
