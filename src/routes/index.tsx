@@ -193,7 +193,7 @@ function Index() {
                   </div>
 
                   {/* Bottom nav */}
-                  <div className="mt-4 flex items-center justify-around border-t border-border/60 pt-2.5 text-[9px] text-muted-foreground">
+                  <div className="mt-auto flex items-center justify-around border-t border-border/60 pt-2.5 text-[9px] text-muted-foreground">
                     <span className="font-medium text-foreground">Log</span>
                     <span>Trends</span>
                     <span>Cycle</span>
@@ -258,8 +258,17 @@ function Index() {
                       </div>
                     </div>
 
+                    {/* Summary card */}
+                    <div className="mt-4 rounded-xl border border-border/60 bg-muted/40 p-3">
+                      <p className="text-[11px] font-semibold text-foreground">Your summary</p>
+                      <p className="text-[10px] font-medium text-muted-foreground">Cross-system analysis</p>
+                      <p className="mt-1.5 text-[10px] leading-snug text-foreground/80">
+                        Your results indicate a high burden in the Cortisol subsystem. For the next week, try the suggested practices and speak to your practitioner about next steps.
+                      </p>
+                    </div>
+
                     {/* Bottom nav */}
-                    <div className="mt-4 flex items-center justify-around border-t border-border/60 pt-2.5 text-[9px] text-muted-foreground">
+                    <div className="mt-auto flex items-center justify-around border-t border-border/60 pt-2.5 text-[9px] text-muted-foreground">
                       <span className="font-medium text-primary">Chat</span>
                       <span>Pattern</span>
                       <span>Library</span>
@@ -581,7 +590,7 @@ function PhoneFrame({ children }: { children: React.ReactNode }) {
   return (
     <div className="relative w-full max-w-[260px] rounded-[2.25rem] border-[10px] border-foreground/85 bg-background shadow-[var(--shadow-soft)]">
       <div className="absolute left-1/2 top-0 z-10 h-5 w-20 -translate-x-1/2 rounded-b-2xl bg-foreground/85" />
-      <div className="overflow-hidden rounded-[1.5rem] bg-background px-4 pb-4 pt-7">
+      <div className="flex min-h-[460px] flex-col overflow-hidden rounded-[1.5rem] bg-background px-4 pb-4 pt-7">
         <div className="flex items-center justify-between text-[10px] font-medium text-muted-foreground">
           <span>9:41</span>
           <div className="flex items-center gap-1">
@@ -590,7 +599,7 @@ function PhoneFrame({ children }: { children: React.ReactNode }) {
             <span className="h-1.5 w-3 rounded-sm border border-muted-foreground/70" />
           </div>
         </div>
-        <div className="mt-3">{children}</div>
+        <div className="mt-3 flex-1">{children}</div>
       </div>
     </div>
   );
