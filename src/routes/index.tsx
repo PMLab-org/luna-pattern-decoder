@@ -138,47 +138,68 @@ function Index() {
 
               {/* Phone mockup */}
               <div className="mt-6 flex justify-center">
-                <div className="relative w-full max-w-[260px] rounded-[2.25rem] border-[10px] border-foreground/85 bg-background shadow-[var(--shadow-soft)]">
-                  {/* Notch */}
-                  <div className="absolute left-1/2 top-0 z-10 h-5 w-20 -translate-x-1/2 rounded-b-2xl bg-foreground/85" />
-
-                  <div className="overflow-hidden rounded-[1.5rem] bg-background px-4 pb-5 pt-7">
-                    {/* Status bar */}
-                    <div className="flex items-center justify-between text-[10px] font-medium text-muted-foreground">
-                      <span>9:41</span>
-                      <div className="flex items-center gap-1">
-                        <span className="h-1.5 w-1.5 rounded-full bg-muted-foreground/70" />
-                        <span className="h-1.5 w-1.5 rounded-full bg-muted-foreground/70" />
-                        <span className="h-1.5 w-3 rounded-sm border border-muted-foreground/70" />
-                      </div>
+                <PhoneFrame>
+                  {/* App header */}
+                  <div className="flex items-center justify-between">
+                    <div>
+                      <p className="text-[10px] uppercase tracking-wider text-muted-foreground">Today</p>
+                      <p className="text-sm font-semibold text-foreground">Symptom Tracker</p>
                     </div>
-
-                    {/* App header */}
-                    <div className="mt-3 flex items-center justify-between">
-                      <p className="text-sm font-semibold text-foreground">Tracker</p>
-                      <span className="h-6 w-6 rounded-lg bg-muted" />
-                    </div>
-
-                    {/* Log list */}
-                    <ul className="mt-4 space-y-2.5 text-muted-foreground">
-                      {[
-                        "Hot flashes — 3 today",
-                        "Sleep — 5h 42m",
-                        "Mood — 4/10",
-                        "Cycle day — 23",
-                        "Energy — low",
-                      ].map((l) => (
-                        <li
-                          key={l}
-                          className="flex items-center justify-between border-b border-border/60 pb-2 text-xs"
-                        >
-                          <span>{l}</span>
-                          <span className="text-[10px]">Logged</span>
-                        </li>
-                      ))}
-                    </ul>
+                    <span className="h-6 w-6 rounded-lg bg-muted" />
                   </div>
-                </div>
+
+                  {/* Log list */}
+                  <ul className="mt-4 space-y-2 text-muted-foreground">
+                    {[
+                      "Hot flashes — 3 today",
+                      "Sleep — 5h 42m",
+                      "Mood — 4/10",
+                      "Cycle day — 23",
+                      "Energy — low",
+                    ].map((l) => (
+                      <li
+                        key={l}
+                        className="flex items-center justify-between border-b border-border/60 pb-1.5 text-[11px]"
+                      >
+                        <span>{l}</span>
+                        <span className="text-[9px]">Logged</span>
+                      </li>
+                    ))}
+                  </ul>
+
+                  {/* Chart */}
+                  <div className="mt-4 rounded-lg border border-border/60 bg-muted/40 p-2.5">
+                    <div className="flex items-center justify-between">
+                      <p className="text-[10px] font-medium text-foreground">Last 7 days</p>
+                      <p className="text-[9px] text-muted-foreground">Mood</p>
+                    </div>
+                    <svg viewBox="0 0 140 50" className="mt-1.5 h-16 w-full">
+                      <polyline
+                        fill="none"
+                        stroke="currentColor"
+                        strokeWidth="1.5"
+                        className="text-muted-foreground"
+                        points="5,30 25,18 45,35 65,22 85,40 105,15 130,28"
+                      />
+                      {[
+                        [5, 30], [25, 18], [45, 35], [65, 22], [85, 40], [105, 15], [130, 28],
+                      ].map(([x, y], i) => (
+                        <circle key={i} cx={x} cy={y} r="2" className="fill-foreground/70" />
+                      ))}
+                    </svg>
+                    <div className="mt-1 flex justify-between text-[8px] text-muted-foreground">
+                      <span>M</span><span>T</span><span>W</span><span>T</span><span>F</span><span>S</span><span>S</span>
+                    </div>
+                  </div>
+
+                  {/* Bottom nav */}
+                  <div className="mt-4 flex items-center justify-around border-t border-border/60 pt-2.5 text-[9px] text-muted-foreground">
+                    <span className="font-medium text-foreground">Log</span>
+                    <span>Trends</span>
+                    <span>Cycle</span>
+                    <span>Me</span>
+                  </div>
+                </PhoneFrame>
               </div>
 
               <p className="mt-6 text-sm text-muted-foreground">
@@ -191,30 +212,66 @@ function Index() {
                 <p className="text-sm font-medium uppercase tracking-wider text-primary">
                   Luna
                 </p>
-                <div className="mt-6 space-y-5">
-                  <div className="relative h-44 overflow-hidden rounded-xl bg-muted">
-                    <div className="absolute inset-0 blur-[6px] opacity-80">
-                      <SystemsMap />
+
+                <div className="mt-6 flex justify-center">
+                  <PhoneFrame>
+                    {/* App header */}
+                    <div className="flex items-center justify-between">
+                      <div className="flex items-center gap-2">
+                        <span className="grid h-6 w-6 place-items-center rounded-full bg-gradient-luna text-primary-foreground">
+                          <Sparkles className="h-3 w-3" />
+                        </span>
+                        <p className="text-sm font-semibold text-foreground">Luna</p>
+                      </div>
+                      <p className="text-[10px] text-muted-foreground">Entry 3 of 5</p>
                     </div>
-                    <div className="absolute inset-0 flex items-center justify-center">
-                      <span className="rounded-full bg-background/80 px-4 py-1.5 text-sm font-medium backdrop-blur">
-                        Unlocks at entry 5
-                      </span>
+
+                    {/* Progress dots */}
+                    <div className="mt-3 flex gap-1">
+                      {[0, 1, 2, 3, 4].map((i) => (
+                        <span
+                          key={i}
+                          className={`h-1 flex-1 rounded-full ${i < 3 ? "bg-gradient-luna" : "bg-muted"}`}
+                        />
+                      ))}
                     </div>
-                  </div>
-                  <div>
-                    <div className="flex items-center justify-between text-sm">
-                      <span className="font-medium">Your pattern map</span>
-                      <span className="text-muted-foreground">Entry 3 of 5 complete</span>
+
+                    {/* Pattern map preview */}
+                    <div className="relative mt-4 h-28 overflow-hidden rounded-xl bg-muted">
+                      <div className="absolute inset-0 opacity-80">
+                        <SystemsMap />
+                      </div>
+                      <div className="absolute inset-0 flex items-center justify-center">
+                        <span className="rounded-full bg-background/85 px-2.5 py-1 text-[10px] font-medium backdrop-blur">
+                          Unlocks at entry 5
+                        </span>
+                      </div>
                     </div>
-                    <div className="mt-2 h-2 overflow-hidden rounded-full bg-muted">
-                      <div className="h-full w-[60%] rounded-full bg-gradient-luna" />
+
+                    {/* Pattern progress */}
+                    <div className="mt-4">
+                      <div className="flex items-center justify-between text-[11px]">
+                        <span className="font-medium text-foreground">Your pattern map</span>
+                        <span className="text-muted-foreground">60%</span>
+                      </div>
+                      <div className="mt-1.5 h-1.5 overflow-hidden rounded-full bg-muted">
+                        <div className="h-full w-[60%] rounded-full bg-gradient-luna" />
+                      </div>
                     </div>
-                    <p className="mt-4 text-sm text-muted-foreground">
-                      Conversations turn symptoms into a clearer picture of what may be going on.
-                    </p>
-                  </div>
+
+                    {/* Bottom nav */}
+                    <div className="mt-4 flex items-center justify-around border-t border-border/60 pt-2.5 text-[9px] text-muted-foreground">
+                      <span className="font-medium text-primary">Chat</span>
+                      <span>Pattern</span>
+                      <span>Library</span>
+                      <span>Me</span>
+                    </div>
+                  </PhoneFrame>
                 </div>
+
+                <p className="mt-6 text-sm text-muted-foreground">
+                  Conversations turn symptoms into a clearer picture of what may be going on.
+                </p>
               </div>
             </div>
           </div>
@@ -519,5 +576,24 @@ function SystemsMap() {
         <line x1="260" y1="150" x2="200" y2="100" />
       </g>
     </svg>
+  );
+}
+
+function PhoneFrame({ children }: { children: React.ReactNode }) {
+  return (
+    <div className="relative w-full max-w-[260px] rounded-[2.25rem] border-[10px] border-foreground/85 bg-background shadow-[var(--shadow-soft)]">
+      <div className="absolute left-1/2 top-0 z-10 h-5 w-20 -translate-x-1/2 rounded-b-2xl bg-foreground/85" />
+      <div className="overflow-hidden rounded-[1.5rem] bg-background px-4 pb-4 pt-7">
+        <div className="flex items-center justify-between text-[10px] font-medium text-muted-foreground">
+          <span>9:41</span>
+          <div className="flex items-center gap-1">
+            <span className="h-1.5 w-1.5 rounded-full bg-muted-foreground/70" />
+            <span className="h-1.5 w-1.5 rounded-full bg-muted-foreground/70" />
+            <span className="h-1.5 w-3 rounded-sm border border-muted-foreground/70" />
+          </div>
+        </div>
+        <div className="mt-3">{children}</div>
+      </div>
+    </div>
   );
 }
