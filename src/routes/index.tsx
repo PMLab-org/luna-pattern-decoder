@@ -20,6 +20,9 @@ import {
   Check,
 } from "lucide-react";
 import founderImg from "@/assets/founder.jpg";
+import { SiteHeader } from "@/components/site-header";
+import { SiteFooter } from "@/components/site-footer";
+import { PricingPreview } from "@/components/pricing-preview";
 
 export const Route = createFileRoute("/")({
   component: Index,
@@ -83,20 +86,7 @@ const faqs = [
 function Index() {
   return (
     <main className="min-h-screen bg-background text-foreground">
-      {/* NAV */}
-      <header className="border-b border-border/60">
-        <div className="mx-auto flex h-16 max-w-[1200px] items-center justify-between px-6">
-          <a href="/" className="flex items-center gap-2 font-semibold tracking-tight">
-            <span className="grid h-8 w-8 place-items-center rounded-full bg-gradient-luna text-primary-foreground">
-              <Sparkles className="h-4 w-4" />
-            </span>
-            <span>Luna<span className="text-muted-foreground font-normal"> by PM Lab</span></span>
-          </a>
-          <Button asChild className="bg-gradient-luna text-primary-foreground hover:opacity-90 transition">
-            <a href="#start">Start Your First Entry</a>
-          </Button>
-        </div>
-      </header>
+      <SiteHeader />
 
       {/* HERO */}
       <section id="start" className="px-6 py-14 md:py-24">
@@ -244,6 +234,8 @@ function Index() {
         </div>
       </section>
 
+      <PricingPreview />
+
       {/* TRUST */}
       <section className="px-6 py-16 md:py-24">
         <div
@@ -354,7 +346,7 @@ function Index() {
       </section>
 
       {/* FAQ */}
-      <section className="px-6 py-16 md:py-24">
+      <section id="faq" className="px-6 py-16 md:py-24">
         <div className="mx-auto max-w-3xl">
           <h2 className="text-center text-3xl font-semibold tracking-tight md:text-5xl">
             Questions, answered
@@ -401,12 +393,7 @@ function Index() {
         </div>
       </section>
 
-      <footer className="border-t border-border">
-        <div className="mx-auto flex max-w-[1200px] flex-col items-center justify-between gap-3 px-6 py-8 text-sm text-muted-foreground md:flex-row">
-          <span>© {new Date().getFullYear()} PM Lab. All rights reserved.</span>
-          <span>Luna is clinical decision support, not a diagnostic tool.</span>
-        </div>
-      </footer>
+      <SiteFooter />
     </main>
   );
 }
