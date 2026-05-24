@@ -1,11 +1,5 @@
-## Issue
+In `src/routes/index.tsx` final CTA section:
 
-The Luna phone mockup renders shorter than the Other trackers one because its inner content is less tall. The `PhoneFrame` has no min-height, so each instance sizes to its content.
-
-## Fix
-
-In `src/routes/index.tsx`, give `PhoneFrame`'s inner screen a consistent min-height so both phones render at the same device size regardless of content.
-
-- Add `min-h-[460px]` (and `flex flex-col`) to the inner screen div of `PhoneFrame`.
-- No other changes — both phones inherit the same height automatically.
-- If added hight in the Luna phone mock up results in white space add text: Heading Your summary, sub heading cross system analysis Content: your results indicate a high burden in teh Cortisol Subsystem. For the next week try the following and speak to your practioner about
+1. Replace the heading with: "Your body is talking. Let's listen." and add a subheading paragraph: "Tell Luna what's going on and Luna will connect symptom data and help you see what it means."
+2. Replace the plain `<a href="#">Are you a clinician?</a>` with a TanStack `<Link to="/for-clinicians">` that keeps the same underline styling.
+3. The CTA button - no changes
