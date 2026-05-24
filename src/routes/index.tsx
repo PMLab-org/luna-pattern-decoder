@@ -258,8 +258,17 @@ function Index() {
                       </div>
                     </div>
 
+                    {/* Summary card */}
+                    <div className="mt-4 rounded-xl border border-border/60 bg-muted/40 p-3">
+                      <p className="text-[11px] font-semibold text-foreground">Your summary</p>
+                      <p className="text-[10px] font-medium text-muted-foreground">Cross-system analysis</p>
+                      <p className="mt-1.5 text-[10px] leading-snug text-foreground/80">
+                        Your results indicate a high burden in the Cortisol subsystem. For the next week, try the suggested practices and speak to your practitioner about next steps.
+                      </p>
+                    </div>
+
                     {/* Bottom nav */}
-                    <div className="mt-4 flex items-center justify-around border-t border-border/60 pt-2.5 text-[9px] text-muted-foreground">
+                    <div className="mt-auto flex items-center justify-around border-t border-border/60 pt-2.5 text-[9px] text-muted-foreground">
                       <span className="font-medium text-primary">Chat</span>
                       <span>Pattern</span>
                       <span>Library</span>
