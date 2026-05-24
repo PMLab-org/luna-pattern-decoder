@@ -193,7 +193,7 @@ function Index() {
                   </div>
 
                   {/* Bottom nav */}
-                  <div className="mt-4 flex items-center justify-around border-t border-border/60 pt-2.5 text-[9px] text-muted-foreground">
+                  <div className="mt-auto flex items-center justify-around border-t border-border/60 pt-2.5 text-[9px] text-muted-foreground">
                     <span className="font-medium text-foreground">Log</span>
                     <span>Trends</span>
                     <span>Cycle</span>
