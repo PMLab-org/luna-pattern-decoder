@@ -1,17 +1,13 @@
-## Changes to `src/routes/index.tsx`
+## Hero section update (`src/routes/index.tsx`)
 
-### 1. "How Luna works" section — add caption under the 3 cards
+The current hero already matches the screenshot's recommended structure (H1, subhead, CTA, supporting line) except for the badge above the headline. Per the screenshot annotation ("REMOVE or change to: 'Your body is talking. Let's listen.'"), make one change:
 
-Keep the existing subhead ("Three steps from feeling unheard to walking in with clarity.") unchanged. Below the 3-card grid, add a small centered caption:
+**Remove the badge** ("✨ AI pattern mapping for menopause") above the H1 so the headline leads the hero. This also tightens vertical rhythm — the H1's `mt-5` is dropped to `mt-0` (or the `mt-5` removed) so spacing stays balanced.
 
-> Your first pattern report unlocks at check-in five. Ongoing entries help Luna track how your symptoms connect and change over time.
+Everything else stays as-is:
+- H1: "Most apps track symptoms. We tell you what they mean."
+- Subhead: "Your symptoms are not random. They form a pattern. Luna reveals it so you know what to do."
+- CTA: "Start Your First Entry"
+- Supporting line: "Five check-ins unlock your first meaningful pattern report…"
 
-Styling: centered, `text-sm text-muted-foreground`, `mt-10` from the grid, constrained to `max-w-2xl mx-auto`.
-
-### 2. FAQ — update "How does the 5-conversation process work?"
-
-Replace the current answer with:
-
-> Five check-ins unlock your first meaningful pattern report. Ongoing entries help Luna track how your symptoms connect and change over time. Each entry can be as quick or as detailed as you need, and works on any phone or computer. Most women complete the 5-conversation pattern map over 1–2 weeks.
-
-No other content, layout, or logic changes.
+No layout, color, or component changes beyond removing the badge span and adjusting the H1's top margin.
