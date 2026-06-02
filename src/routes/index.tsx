@@ -321,7 +321,7 @@ function Index() {
                 outcomes: [
                   {
                     label: "For you",
-                    body: "What your body has been saying, in plain language. Plus what to try this week.",
+                    body: "What your body has been saying. Plus what to try this week.",
                   },
                   {
                     label: "For your doctor",
