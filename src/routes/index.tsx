@@ -302,7 +302,7 @@ function Index() {
           <div className="mx-auto max-w-2xl text-center">
             <h2 className="text-3xl font-semibold tracking-tight md:text-5xl">How Luna works</h2>
             <p className="mt-4 text-muted-foreground">
-              Three quiet steps. Two ways to walk away with clarity.
+              Three easy steps. Two ways to walk away with clarity.
             </p>
           </div>
           <div className="mt-14 grid gap-6 md:grid-cols-3">
