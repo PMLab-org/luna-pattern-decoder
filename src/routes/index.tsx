@@ -156,6 +156,7 @@ function Index() {
                       "Mood — 4/10",
                       "Cycle day — 23",
                       "Energy — low",
+                      "Brain fog — mid",
                     ].map((l) => (
                       <li
                         key={l}
@@ -283,6 +284,9 @@ function Index() {
 
               <p className="mt-6 text-sm text-muted-foreground">
                 Conversations turn symptoms into a clearer picture of what may be going on.
+              </p>
+              <p className="mt-2 text-sm text-muted-foreground">
+                Top things you can do to address those symptoms effectively, plus specific questions to ask your physician — including labs to consider.
               </p>
             </div>
           </div>
