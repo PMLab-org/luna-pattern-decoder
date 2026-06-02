@@ -1,12 +1,14 @@
-## Shorten Luna mockup summary to match OTHER TRACKERS screen height
+## Tighten phone mockups — remove bottom whitespace
 
-The Luna phone mockup in the hero comparison section is taller than the OTHER TRACKERS mockup because the summary card contains three text-heavy sub-sections. To equalise the two PhoneFrame heights:
+The two phone mockups in the differentiation section currently use a fixed `h-[600px]` inner frame. The Luna content fills it, but the OTHER TRACKERS content leaves a large empty gap below the chart, and Luna has a smaller gap below the summary card.
 
-1. **Remove** the first sentence from the summary card:  
-   `"Your sleep and brain fog cluster 3 days before your period — likely a luteal-phase pattern."`
+### Change
 
-2. **Tighten** the remaining body text to keep the three headings ("Your summary", "For the next week try:", "Speak to your practitioner about:") but with shorter copy so the overall card height shrinks.
+In `src/routes/index.tsx`, update `PhoneFrame` to size to its content instead of a fixed height:
 
-Result: both phone frames sit at the same visual height in the side-by-side comparison.
+- Replace `flex h-[600px] flex-col` with `flex flex-col` on the inner screen div (drop the fixed height entirely).
+- Remove the `mt-auto` push on the OTHER TRACKERS bottom nav (Log / Trends / Cycle / Me) so it sits directly under the chart instead of being pushed to the bottom.
+
+To keep both mockups visually aligned, the parent grid cards (`md:grid-cols-2`) already stretch to equal height via the grid — the captions below each phone will sit at slightly different vertical positions but the cards themselves stay aligned. If the user wants the phones themselves pixel-aligned at the top, that's already true (they share the same top within each card).
 
 No other files or sections are touched.
