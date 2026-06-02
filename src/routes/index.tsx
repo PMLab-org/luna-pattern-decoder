@@ -157,6 +157,7 @@ function Index() {
                       "Cycle day — 23",
                       "Energy — low",
                       "Brain fog — mid",
+                      "Headache — mild",
                     ].map((l) => (
                       <li
                         key={l}
