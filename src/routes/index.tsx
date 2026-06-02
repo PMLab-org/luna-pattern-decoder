@@ -97,7 +97,7 @@ function Index() {
             </span>
             <h1 className="mt-4 text-4xl font-semibold leading-[1.05] tracking-tight md:text-6xl">
               Most apps track symptoms.{" "}
-              <span className="text-gradient-luna">We tell you what they mean.</span>
+              <span className="text-gradient-luna">Luna tells you what they mean.</span>
             </h1>
             <p className="mt-5 max-w-xl text-lg text-muted-foreground md:text-xl">
               Your symptoms are not random. They form a pattern. Luna reveals it so you know what to do.
