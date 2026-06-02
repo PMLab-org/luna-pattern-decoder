@@ -204,9 +204,11 @@ function Index() {
                 </PhoneFrame>
               </div>
 
-              <p className="mt-6 text-sm text-muted-foreground">
-                Numbers or charts without narrative. You are left to connect the dots alone.
-              </p>
+              <ul className="mt-6 space-y-2 text-sm text-muted-foreground">
+                <li>Long list of peri and menopause symptoms.</li>
+                <li>Numbers or charts without narrative.</li>
+                <li>You are left to connect the dots alone.</li>
+              </ul>
             </div>
 
             <div className="rounded-2xl border border-border bg-card p-8 shadow-[var(--shadow-card)]">
