@@ -300,7 +300,7 @@ function Index() {
           <div className="mx-auto max-w-2xl text-center">
             <h2 className="text-3xl font-semibold tracking-tight md:text-5xl">How Luna works</h2>
             <p className="mt-4 text-muted-foreground">
-              Three quiet steps from feeling unheard to walking in with clarity.
+              Three quiet steps. Two ways to walk away with clarity.
             </p>
           </div>
           <div className="mt-14 grid gap-6 md:grid-cols-3">
@@ -317,8 +317,17 @@ function Index() {
               },
               {
                 icon: Stethoscope,
-                title: "Bring clarity to your appointment",
-                body: "Walk in with a one-page summary your clinician can read in 30 seconds. No more starting from scratch.",
+                title: "Walk away with both",
+                outcomes: [
+                  {
+                    label: "For you",
+                    body: "What your body has been saying, in plain language. Plus what to try this week.",
+                  },
+                  {
+                    label: "For your doctor",
+                    body: "A one-page report they can read in 30 seconds.",
+                  },
+                ],
               },
             ].map((s) => (
               <div
@@ -329,7 +338,21 @@ function Index() {
                   <s.icon className="h-5 w-5" />
                 </div>
                 <h3 className="mt-5 text-xl font-semibold">{s.title}</h3>
-                <p className="mt-3 text-muted-foreground">{s.body}</p>
+                {"outcomes" in s && s.outcomes ? (
+                  <div className="mt-4 space-y-3">
+                    {s.outcomes.map((o) => (
+                      <div
+                        key={o.label}
+                        className="rounded-xl border border-border/60 bg-muted/40 p-4"
+                      >
+                        <p className="text-sm font-semibold text-foreground">{o.label}</p>
+                        <p className="mt-1 text-sm text-muted-foreground">{o.body}</p>
+                      </div>
+                    ))}
+                  </div>
+                ) : (
+                  <p className="mt-3 text-muted-foreground">{s.body}</p>
+                )}
               </div>
             ))}
           </div>
