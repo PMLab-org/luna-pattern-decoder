@@ -170,7 +170,7 @@ function PricingPage() {
                     <th
                       key={label}
                       className={`px-6 py-5 text-center text-sm font-semibold ${
-                        i === 2 ? "text-primary" : "text-foreground"
+                        i === 1 ? "text-primary" : "text-foreground"
                       }`}
                     >
                       {label}
@@ -199,21 +199,21 @@ function PricingPage() {
               <div
                 key={label}
                 className={
-                  planIdx === 2
+                  planIdx === 1
                     ? "rounded-2xl bg-gradient-luna p-[1.5px]"
                     : "rounded-2xl border border-border bg-card"
                 }
               >
                 <div
                   className={
-                    planIdx === 2
+                    planIdx === 1
                       ? "rounded-[calc(1rem-1px)] bg-card p-5"
                       : "p-5"
                   }
                 >
                   <p
                     className={`text-sm font-semibold ${
-                      planIdx === 2 ? "text-primary" : "text-foreground"
+                      planIdx === 1 ? "text-primary" : "text-foreground"
                     }`}
                   >
                     {label}
