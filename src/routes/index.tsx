@@ -263,13 +263,13 @@ function Index() {
                     <div className="mt-3 rounded-xl border border-border/60 bg-muted/40 p-3">
                       <p className="text-[11px] font-semibold text-foreground">Your summary</p>
                       <p className="mt-1 text-[10px] leading-snug text-foreground/80">
-                        Your sleep and brain fog cluster 3 days before your period — likely a luteal-phase pattern. The symptoms you mention suggest an interplay between your cortisol and adrenal subsystems pointing to adrenal fatigue.
+                        Your symptoms suggest an interplay between your cortisol and adrenal subsystems, pointing to adrenal fatigue.
                       </p>
 
                       <p className="mt-2.5 text-[11px] font-semibold text-foreground">For the next week try:</p>
                       <ul className="mt-1 space-y-1 text-[10px] leading-snug text-foreground/80">
-                        <li>• Start each day with a protein-rich breakfast within 30 minutes of waking to stabilise blood sugar.</li>
-                        <li>• Add a 10-minute walk in natural light each afternoon to help regulate circadian rhythm.</li>
+                        <li>• Protein-rich breakfast within 30 min of waking.</li>
+                        <li>• 10-min walk in natural light each afternoon.</li>
                       </ul>
 
                       <p className="mt-2.5 text-[11px] font-semibold text-foreground">Speak to your practitioner about:</p>
