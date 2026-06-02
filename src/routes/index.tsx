@@ -339,12 +339,9 @@ function Index() {
                 </div>
                 <h3 className="mt-5 text-xl font-semibold">{s.title}</h3>
                 {"outcomes" in s && s.outcomes ? (
-                  <div className="mt-4 space-y-3">
+                  <div className="mt-4 space-y-4">
                     {s.outcomes.map((o) => (
-                      <div
-                        key={o.label}
-                        className="rounded-xl border border-border/60 bg-muted/40 p-4"
-                      >
+                      <div key={o.label}>
                         <p className="text-sm font-semibold text-foreground">{o.label}</p>
                         <p className="mt-1 text-sm text-muted-foreground">{o.body}</p>
                       </div>
