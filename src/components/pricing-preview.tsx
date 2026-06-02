@@ -9,16 +9,10 @@ const plans = [
     blurb: "Track symptoms and see your basic pattern view.",
   },
   {
-    name: "Premium Monthly",
-    price: "$10",
-    suffix: "/month",
-    blurb: "Weekly summaries, full reports, and priority access.",
-  },
-  {
     name: "Founding Member",
     price: "$75",
     suffix: "/year",
-    blurb: "Lock in founding pricing. Best value, forever.",
+    blurb: "Early-stage pricing — becomes $200/year after 6 months.",
     featured: true,
   },
 ];
@@ -33,7 +27,7 @@ export function PricingPreview() {
             Start free. Go deeper when you're ready.
           </p>
         </div>
-        <div className="mt-12 grid gap-5 md:grid-cols-3">
+        <div className="mt-12 grid gap-5 md:grid-cols-2">
           {plans.map((p) =>
             p.featured ? (
               <div
