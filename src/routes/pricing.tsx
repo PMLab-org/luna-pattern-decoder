@@ -49,35 +49,22 @@ const plans: Plan[] = [
     features: [
       "Unlimited symptom tracking",
       "Daily check-ins",
-      "Limited insights",
+      "Limited weekly summaries",
       "Basic pattern view",
     ],
     cta: "Start Your First Entry",
     ctaVariant: "outline",
   },
   {
-    name: "Premium Monthly",
-    tagline: "Go deeper, month by month.",
-    price: "$10",
-    suffix: "/month",
+    name: "Founding Member Annual",
+    tagline: "Early-stage pricing — becomes $200/year after 6 months.",
+    price: "$75",
+    suffix: "/year",
     features: [
       "Everything in Free",
       "Weekly summaries",
       "Full symptom reports",
-      "Priority access to new features",
-    ],
-    cta: "Choose monthly",
-    ctaVariant: "outline",
-  },
-  {
-    name: "Founding Member Annual",
-    tagline: "Shape what Luna becomes.",
-    price: "$75",
-    suffix: "/year",
-    features: [
-      "Everything in Premium",
       "Locked-in founding member pricing",
-      "Best value",
       "Priority access to new features",
     ],
     cta: "Join as founding member",
@@ -87,16 +74,16 @@ const plans: Plan[] = [
 ];
 
 const comparison: { feature: string; values: (boolean | string)[] }[] = [
-  { feature: "Symptom tracking", values: [true, true, true] },
-  { feature: "Voice logging", values: [true, true, true] },
-  { feature: "AI chat", values: ["Limited", true, true] },
-  { feature: "Weekly summaries", values: [false, true, true] },
-  { feature: "Full reports", values: [false, true, true] },
-  { feature: "Clinician-ready summary", values: [false, true, true] },
-  { feature: "Priority feature access", values: [false, true, true] },
+  { feature: "Symptom tracking", values: [true, true] },
+  { feature: "Voice logging", values: [true, true] },
+  { feature: "AI chat", values: ["Limited", true] },
+  { feature: "Weekly summaries", values: ["Limited", true] },
+  { feature: "Full reports", values: [false, true] },
+  { feature: "Clinician-ready summary", values: [false, true] },
+  { feature: "Priority feature access", values: [false, true] },
 ];
 
-const planLabels = ["Free", "Premium", "Founding"];
+const planLabels = ["Free", "Founding"];
 
 const faqs = [
   {
@@ -152,7 +139,7 @@ function PricingPage() {
 
       {/* PRICING CARDS */}
       <section className="px-6 pb-8">
-        <div className="mx-auto grid max-w-[1200px] gap-6 md:grid-cols-3 md:items-stretch">
+        <div className="mx-auto grid max-w-[900px] gap-6 md:grid-cols-2 md:items-stretch">
           {plans.map((plan) => (
             <PriceCard key={plan.name} plan={plan} />
           ))}
