@@ -236,7 +236,7 @@ function Index() {
                     </div>
 
                     {/* Pattern map preview */}
-                    <div className="relative mt-4 h-28 overflow-hidden rounded-xl bg-muted">
+                    <div className="relative mt-4 h-16 overflow-hidden rounded-xl bg-muted">
                       <div className="absolute inset-0 opacity-80">
                         <SystemsMap />
                       </div>
@@ -259,20 +259,24 @@ function Index() {
                     </div>
 
                     {/* Summary card */}
-                    <div className="mt-4 rounded-xl border border-border/60 bg-muted/40 p-3">
+                    {/* Summary card */}
+                    <div className="mt-3 rounded-xl border border-border/60 bg-muted/40 p-3">
                       <p className="text-[11px] font-semibold text-foreground">Your summary</p>
-                      <p className="text-[10px] font-medium text-muted-foreground">Your symptoms, connected</p>
-                      <p className="mt-1.5 text-[10px] leading-snug text-foreground/80">
-                        Your stress patterns stand out this week. Try the suggested practices to feel more like yourself.
+                      <p className="mt-1 text-[10px] leading-snug text-foreground/80">
+                        Your sleep and brain fog cluster 3 days before your period — likely a luteal-phase pattern. The symptoms you mention suggest an interplay between your cortisol and adrenal subsystems pointing to adrenal fatigue.
                       </p>
-                    </div>
 
-                    {/* Bottom nav */}
-                    <div className="mt-auto flex items-center justify-around border-t border-border/60 pt-2.5 text-[9px] text-muted-foreground">
-                      <span className="font-medium text-primary">Chat</span>
-                      <span>Pattern</span>
-                      <span>Library</span>
-                      <span>Me</span>
+                      <p className="mt-2.5 text-[11px] font-semibold text-foreground">For the next week try:</p>
+                      <ul className="mt-1 space-y-1 text-[10px] leading-snug text-foreground/80">
+                        <li>• Start each day with a protein-rich breakfast within 30 minutes of waking to stabilise blood sugar.</li>
+                        <li>• Add a 10-minute walk in natural light each afternoon to help regulate circadian rhythm.</li>
+                      </ul>
+
+                      <p className="mt-2.5 text-[11px] font-semibold text-foreground">Speak to your practitioner about:</p>
+                      <ul className="mt-1 space-y-0.5 text-[10px] leading-snug text-foreground/80">
+                        <li>• Cortisol testing</li>
+                        <li>• Thyroid panel testing</li>
+                      </ul>
                     </div>
                   </PhoneFrame>
               </div>
