@@ -88,7 +88,7 @@ const planLabels = ["Free", "Founding"];
 const faqs = [
   {
     q: "What's included in the free plan?",
-    a: "Unlimited symptom tracking, daily check-ins, and your basic pattern view. It's a real, useful tool — not a teaser.",
+    a: "Limited symptom tracking, daily check-ins, and your basic pattern view. It's still a real, useful tool — not a teaser.",
   },
   {
     q: "When does Premium make sense?",
