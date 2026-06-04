@@ -57,7 +57,7 @@ const plans: Plan[] = [
   },
   {
     name: "Founding Member Annual",
-    tagline: "Early-stage pricing — becomes $200/year after 6 months.",
+    tagline: "$75/year for early adopters. Your price stays $75/year after launch (regular price will be $200/year).",
     price: "$75",
     suffix: "/year",
     features: [
