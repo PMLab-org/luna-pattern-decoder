@@ -74,7 +74,7 @@ const plans: Plan[] = [
 ];
 
 const comparison: { feature: string; values: (boolean | string)[] }[] = [
-  { feature: "Symptom tracking", values: [true, true] },
+  { feature: "Symptom tracking", values: ["Limited", true] },
   { feature: "Voice logging", values: [true, true] },
   { feature: "AI chat", values: ["Limited", true] },
   { feature: "Weekly summaries", values: ["Limited", true] },
