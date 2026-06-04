@@ -12,7 +12,7 @@ const plans = [
     name: "Founding Member",
     price: "$75",
     suffix: "/year",
-    blurb: "Early-stage pricing — becomes $200/year after 6 months.",
+    blurb: "$75/year for early adopters. Your price stays $75/year after launch (regular price will be $200/year).",
     featured: true,
   },
 ];
