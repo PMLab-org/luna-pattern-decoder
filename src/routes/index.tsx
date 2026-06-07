@@ -335,7 +335,7 @@ function Index() {
               },
               {
                 icon: Stethoscope,
-                title: "Walk away with both",
+                title: "Walk away with confidence",
                 outcomes: [
                   {
                     label: "For you",
