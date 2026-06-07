@@ -1,9 +1,11 @@
-Update the three cards in the "Built with the care this moment deserves" section on the homepage with the new titles and body copy provided by the user.
+## What to change
 
-### File changes
-- `src/routes/index.tsx` — Update the card array inside the TRUST section (lines 374–389):
-  - Card 1: Title → "We translate your words into data", body → Luna's AI extracts specific symptoms...
-  - Card 2: Title → "Your symptoms map onto a clinical framework", body → Dr. Daniella Remy designed...
-  - Card 3: Title → "A real doctor reviews your patterns", body → During beta, Dr. Dee personally reviews...
+In `src/routes/index.tsx`, update the "How much does it cost?" FAQ answer in the `faqs` array (lines 61-63).
 
-No other sections, routes, or components are affected.
+**Current:**
+> Early access is free while we build with our founding community. Pricing for the full version will be announced before any charges begin.
+
+**New:**
+> Luna is free to start. You can also join as a founding member for US$75/year and lock in that price forever.
+
+This aligns the homepage FAQ with the actual pricing shown in `PricingPreview` and `/pricing`.
