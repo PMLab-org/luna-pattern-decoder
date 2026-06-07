@@ -10,12 +10,18 @@
 
 import { Route as rootRouteImport } from './routes/__root'
 import { Route as PricingRouteImport } from './routes/pricing'
+import { Route as LegalRouteImport } from './routes/legal'
 import { Route as ForCliniciansRouteImport } from './routes/for-clinicians'
 import { Route as IndexRouteImport } from './routes/index'
 
 const PricingRoute = PricingRouteImport.update({
   id: '/pricing',
   path: '/pricing',
+  getParentRoute: () => rootRouteImport,
+} as any)
+const LegalRoute = LegalRouteImport.update({
+  id: '/legal',
+  path: '/legal',
   getParentRoute: () => rootRouteImport,
 } as any)
 const ForCliniciansRoute = ForCliniciansRouteImport.update({
@@ -32,30 +38,34 @@ const IndexRoute = IndexRouteImport.update({
 export interface FileRoutesByFullPath {
   '/': typeof IndexRoute
   '/for-clinicians': typeof ForCliniciansRoute
+  '/legal': typeof LegalRoute
   '/pricing': typeof PricingRoute
 }
 export interface FileRoutesByTo {
   '/': typeof IndexRoute
   '/for-clinicians': typeof ForCliniciansRoute
+  '/legal': typeof LegalRoute
   '/pricing': typeof PricingRoute
 }
 export interface FileRoutesById {
   __root__: typeof rootRouteImport
   '/': typeof IndexRoute
   '/for-clinicians': typeof ForCliniciansRoute
+  '/legal': typeof LegalRoute
   '/pricing': typeof PricingRoute
 }
 export interface FileRouteTypes {
   fileRoutesByFullPath: FileRoutesByFullPath
-  fullPaths: '/' | '/for-clinicians' | '/pricing'
+  fullPaths: '/' | '/for-clinicians' | '/legal' | '/pricing'
   fileRoutesByTo: FileRoutesByTo
-  to: '/' | '/for-clinicians' | '/pricing'
-  id: '__root__' | '/' | '/for-clinicians' | '/pricing'
+  to: '/' | '/for-clinicians' | '/legal' | '/pricing'
+  id: '__root__' | '/' | '/for-clinicians' | '/legal' | '/pricing'
   fileRoutesById: FileRoutesById
 }
 export interface RootRouteChildren {
   IndexRoute: typeof IndexRoute
   ForCliniciansRoute: typeof ForCliniciansRoute
+  LegalRoute: typeof LegalRoute
   PricingRoute: typeof PricingRoute
 }
 
@@ -66,6 +76,13 @@ declare module '@tanstack/react-router' {
       path: '/pricing'
       fullPath: '/pricing'
       preLoaderRoute: typeof PricingRouteImport
+      parentRoute: typeof rootRouteImport
+    }
+    '/legal': {
+      id: '/legal'
+      path: '/legal'
+      fullPath: '/legal'
+      preLoaderRoute: typeof LegalRouteImport
       parentRoute: typeof rootRouteImport
     }
     '/for-clinicians': {
@@ -88,6 +105,7 @@ declare module '@tanstack/react-router' {
 const rootRouteChildren: RootRouteChildren = {
   IndexRoute: IndexRoute,
   ForCliniciansRoute: ForCliniciansRoute,
+  LegalRoute: LegalRoute,
   PricingRoute: PricingRoute,
 }
 export const routeTree = rootRouteImport
