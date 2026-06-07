@@ -374,18 +374,18 @@ function Index() {
             {[
               {
                 icon: BookOpen,
-                title: "Evidence-Based",
-                body: "Frameworks grounded in functional medicine principles and established scientific and medical research.",
+                title: "We translate your words into data",
+                body: "Luna's AI extracts specific symptoms, severity, and cycle context from how you naturally describe things — so \"I barely slept and my brain feels like soup\" becomes structured information, not just a transcript.",
               },
               {
-                icon: Lock,
-                title: "Privacy-First",
-                body: "Luna is built with the same industry-standard safeguards trusted to protect health information in clinical care, so your story stays private, secure, and fully yours.",
+                icon: Network,
+                title: "Your symptoms map onto a clinical framework",
+                body: "Dr. Daniella Remy designed Luna's framework, mapping symptoms across nine connected body systems. It's how a naturopathic clinician thinks — now translated into a daily companion you carry with you.",
               },
               {
                 icon: Stethoscope,
-                title: "Clinical Decision Support",
-                body: "Provides precise, measurable tracking of symptoms reported over time. Clinicians see baseline vs. post-treatment outcomes at a glance.",
+                title: "A real doctor reviews your patterns",
+                body: "During beta, Dr. Dee personally reviews every pattern report before you see it. AI doesn't get the final word — a clinical judgment does.",
               },
             ].map((p) => (
               <div key={p.title} className="rounded-2xl bg-card/80 p-7 backdrop-blur">
