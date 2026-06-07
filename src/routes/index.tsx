@@ -50,36 +50,16 @@ const faqs = [
     a: "Luna is an AI guide built for perimenopause. Instead of logging isolated symptoms into charts, you have short conversations — and Luna connects the dots between what you're feeling so it finally makes sense.",
   },
   {
-    q: "Who is Luna for — perimenopause, menopause, or both?",
-    a: "Luna is designed for women in perimenopause and menopause, typically from their late 30s through 50s+, whether you're just noticing changes or already in menopause.",
-  },
-  {
-    q: "How does the 5-conversation process work?",
-    a: "Five check-ins unlock your first meaningful pattern report. Ongoing entries help Luna track how your symptoms connect and change over time. Each entry can be as quick or as detailed as you need, and works on any phone or computer. Most women complete the 5 conversations, get a personalized summary of how your symptoms interact, and can download your first clinician-ready report over 1–2 weeks.",
-  },
-  {
     q: "Is Luna a replacement for my doctor?",
     a: "No. Luna is designed to support, not replace, your care. It helps you walk into appointments with clearer patterns, language, and questions so your time with your clinician goes further.",
-  },
-  {
-    q: "Is Luna still in beta / in development?",
-    a: "Yes. Luna and The Perimenopause Lab are in active development and already used by more than 90 women. Being in beta means we're still refining the experience — and your feedback directly shapes what we build next.",
   },
   {
     q: "How is my data protected?",
     a: "Your entries are encrypted, never sold, and never used to train external models. You can export or delete your data at any time.",
   },
   {
-    q: "Is Luna evidence-based?",
-    a: "Yes. Luna's framework is built with clinicians and researchers in perimenopause and women's health, grounded in peer-reviewed literature.",
-  },
-  {
     q: "How much does it cost?",
     a: "Early access is free while we build with our founding community. Pricing for the full version will be announced before any charges begin.",
-  },
-  {
-    q: "Who is PM Lab?",
-    a: "PM Lab is a women's health research studio building tools that take perimenopause seriously — clinically, scientifically, and humanly.",
   },
 ];
 
@@ -510,6 +490,15 @@ function Index() {
               </AccordionItem>
             ))}
           </Accordion>
+          <p className="mt-10 text-center text-sm text-muted-foreground">
+            Looking for more?{" "}
+            <Link
+              to="/faq"
+              className="font-medium text-primary underline-offset-4 hover:underline"
+            >
+              See all FAQs →
+            </Link>
+          </p>
         </div>
       </section>
 

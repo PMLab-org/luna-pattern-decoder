@@ -12,6 +12,7 @@ import { Route as rootRouteImport } from './routes/__root'
 import { Route as PricingRouteImport } from './routes/pricing'
 import { Route as LegalRouteImport } from './routes/legal'
 import { Route as ForCliniciansRouteImport } from './routes/for-clinicians'
+import { Route as FaqRouteImport } from './routes/faq'
 import { Route as IndexRouteImport } from './routes/index'
 
 const PricingRoute = PricingRouteImport.update({
@@ -29,6 +30,11 @@ const ForCliniciansRoute = ForCliniciansRouteImport.update({
   path: '/for-clinicians',
   getParentRoute: () => rootRouteImport,
 } as any)
+const FaqRoute = FaqRouteImport.update({
+  id: '/faq',
+  path: '/faq',
+  getParentRoute: () => rootRouteImport,
+} as any)
 const IndexRoute = IndexRouteImport.update({
   id: '/',
   path: '/',
@@ -37,12 +43,14 @@ const IndexRoute = IndexRouteImport.update({
 
 export interface FileRoutesByFullPath {
   '/': typeof IndexRoute
+  '/faq': typeof FaqRoute
   '/for-clinicians': typeof ForCliniciansRoute
   '/legal': typeof LegalRoute
   '/pricing': typeof PricingRoute
 }
 export interface FileRoutesByTo {
   '/': typeof IndexRoute
+  '/faq': typeof FaqRoute
   '/for-clinicians': typeof ForCliniciansRoute
   '/legal': typeof LegalRoute
   '/pricing': typeof PricingRoute
@@ -50,20 +58,22 @@ export interface FileRoutesByTo {
 export interface FileRoutesById {
   __root__: typeof rootRouteImport
   '/': typeof IndexRoute
+  '/faq': typeof FaqRoute
   '/for-clinicians': typeof ForCliniciansRoute
   '/legal': typeof LegalRoute
   '/pricing': typeof PricingRoute
 }
 export interface FileRouteTypes {
   fileRoutesByFullPath: FileRoutesByFullPath
-  fullPaths: '/' | '/for-clinicians' | '/legal' | '/pricing'
+  fullPaths: '/' | '/faq' | '/for-clinicians' | '/legal' | '/pricing'
   fileRoutesByTo: FileRoutesByTo
-  to: '/' | '/for-clinicians' | '/legal' | '/pricing'
-  id: '__root__' | '/' | '/for-clinicians' | '/legal' | '/pricing'
+  to: '/' | '/faq' | '/for-clinicians' | '/legal' | '/pricing'
+  id: '__root__' | '/' | '/faq' | '/for-clinicians' | '/legal' | '/pricing'
   fileRoutesById: FileRoutesById
 }
 export interface RootRouteChildren {
   IndexRoute: typeof IndexRoute
+  FaqRoute: typeof FaqRoute
   ForCliniciansRoute: typeof ForCliniciansRoute
   LegalRoute: typeof LegalRoute
   PricingRoute: typeof PricingRoute
@@ -92,6 +102,13 @@ declare module '@tanstack/react-router' {
       preLoaderRoute: typeof ForCliniciansRouteImport
       parentRoute: typeof rootRouteImport
     }
+    '/faq': {
+      id: '/faq'
+      path: '/faq'
+      fullPath: '/faq'
+      preLoaderRoute: typeof FaqRouteImport
+      parentRoute: typeof rootRouteImport
+    }
     '/': {
       id: '/'
       path: '/'
@@ -104,6 +121,7 @@ declare module '@tanstack/react-router' {
 
 const rootRouteChildren: RootRouteChildren = {
   IndexRoute: IndexRoute,
+  FaqRoute: FaqRoute,
   ForCliniciansRoute: ForCliniciansRoute,
   LegalRoute: LegalRoute,
   PricingRoute: PricingRoute,

@@ -11,7 +11,7 @@ export function SiteFooter() {
         <nav className="flex flex-wrap items-center gap-x-6 gap-y-2">
           <Link to="/legal" className="transition hover:text-foreground">Privacy</Link>
           <Link to="/legal" className="transition hover:text-foreground">Terms</Link>
-          <a href="/#faq" className="transition hover:text-foreground">FAQ</a>
+          <Link to="/faq" className="transition hover:text-foreground">FAQ</Link>
           <Link to="/for-clinicians" className="transition hover:text-foreground">
             For Clinicians
           </Link>
