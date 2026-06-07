@@ -96,7 +96,7 @@ const faqs = [
   },
   {
     q: "What does founding member pricing mean?",
-    a: "Founding members lock in $75/year forever. As Luna grows and prices change, your rate doesn't — and your feedback shapes what we build.",
+    a: "Founding members lock in US$75/year forever. As Luna grows and prices change, your rate doesn't — and your feedback shapes what we build.",
   },
   {
     q: "Will my price stay the same?",
