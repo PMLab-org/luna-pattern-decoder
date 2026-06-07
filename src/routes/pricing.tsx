@@ -45,7 +45,7 @@ const plans: Plan[] = [
   {
     name: "Free",
     tagline: "Start listening to your body.",
-    price: "$0",
+    price: "US$0",
     features: [
       "Unlimited symptom tracking",
       "Daily check-ins",
@@ -57,8 +57,8 @@ const plans: Plan[] = [
   },
   {
     name: "Founding Member Annual",
-    tagline: "$75/year for early adopters. Your price stays $75/year after launch (regular price will be $200/year).",
-    price: "$75",
+    tagline: "US$75/year for early adopters. Your price stays US$75/year after launch (regular price will be US$200/year).",
+    price: "US$75",
     suffix: "/year",
     features: [
       "Everything in Free",
@@ -96,7 +96,7 @@ const faqs = [
   },
   {
     q: "What does founding member pricing mean?",
-    a: "Founding members lock in $75/year forever. As Luna grows and prices change, your rate doesn't — and your feedback shapes what we build.",
+    a: "Founding members lock in US$75/year forever. As Luna grows and prices change, your rate doesn't — and your feedback shapes what we build.",
   },
   {
     q: "Will my price stay the same?",
