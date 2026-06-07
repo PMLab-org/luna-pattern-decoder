@@ -9,8 +9,8 @@ export function SiteFooter() {
           <span className="text-xs">Luna is clinical decision support, not a diagnostic tool.</span>
         </div>
         <nav className="flex flex-wrap items-center gap-x-6 gap-y-2">
-          <a href="#" className="transition hover:text-foreground">Privacy</a>
-          <a href="#" className="transition hover:text-foreground">Terms</a>
+          <Link to="/legal" className="transition hover:text-foreground">Privacy</Link>
+          <Link to="/legal" className="transition hover:text-foreground">Terms</Link>
           <a href="/#faq" className="transition hover:text-foreground">FAQ</a>
           <Link to="/for-clinicians" className="transition hover:text-foreground">
             For Clinicians
