@@ -374,18 +374,18 @@ function Index() {
             {[
               {
                 icon: BookOpen,
-                title: "We translate your words into data",
-                body: "Luna's AI extracts specific symptoms, severity, and cycle context from how you naturally describe things — so \"I barely slept and my brain feels like soup\" becomes structured information, not just a transcript.",
+                title: "Luna translates your words into data",
+                body: "\"I barely slept and my brain feels like soup\" becomes structured data — symptoms, severity, cycle context. Not just a transcript.",
               },
               {
                 icon: Network,
                 title: "Your symptoms map onto a clinical framework",
-                body: "Dr. Daniella Remy designed Luna's framework, mapping symptoms across nine connected body systems. It's how a naturopathic clinician thinks — now translated into a daily companion you carry with you.",
+                body: "Dr. Daniella Remy built Luna's framework around nine connected body systems — how a naturopathic clinician thinks, now in your pocket every day.",
               },
               {
                 icon: Stethoscope,
                 title: "A real doctor reviews your patterns",
-                body: "During beta, Dr. Dee personally reviews every pattern report before you see it. AI doesn't get the final word — a clinical judgment does.",
+                body: "During beta, Dr. Dee personally reviews every pattern report before you see it. Clinical judgment gets the final word, not AI.",
               },
             ].map((p) => (
               <div key={p.title} className="rounded-2xl bg-card/80 p-7 backdrop-blur">
