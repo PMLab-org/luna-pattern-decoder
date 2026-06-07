@@ -204,10 +204,17 @@ function Index() {
                 </PhoneFrame>
               </div>
 
-              <ul className="mt-6 space-y-2 text-sm text-muted-foreground">
-                <li>Long list of peri and menopause symptoms.</li>
-                <li>Numbers or charts without narrative.</li>
-                <li>You are left to connect the dots alone.</li>
+              <ul className="mt-6 space-y-2.5 text-sm text-muted-foreground">
+                {[
+                  "Long list of peri and menopause symptoms.",
+                  "Numbers or charts without narrative.",
+                  "You are left to connect the dots alone.",
+                ].map((t) => (
+                  <li key={t} className="flex items-start gap-3">
+                    <span className="mt-1.5 h-1.5 w-1.5 flex-shrink-0 rounded-full bg-foreground" />
+                    <span>{t}</span>
+                  </li>
+                ))}
               </ul>
             </div>
 
@@ -285,12 +292,21 @@ function Index() {
                   </PhoneFrame>
               </div>
 
-              <p className="mt-6 text-sm text-muted-foreground">
-                Conversations turn symptoms into a clearer picture of what may be going on.
-              </p>
-              <p className="mt-2 text-sm text-muted-foreground">
-                Top things you can do to address those symptoms effectively, plus specific questions to ask your physician — including labs to consider.
-              </p>
+              <ul className="mt-6 space-y-3 text-sm text-muted-foreground">
+                {[
+                  "Conversations turn symptoms into a clearer picture of what may be going on.",
+                  "Reveal cycle-related patterns to your symptoms.",
+                  "Top things you can do to address or prevent those symptoms effectively.",
+                  "Specific questions to ask your physician — including labs to consider.",
+                ].map((t) => (
+                  <li key={t} className="flex items-start gap-3">
+                    <span className="mt-0.5 grid h-4 w-4 flex-shrink-0 place-items-center rounded-full bg-gradient-luna text-primary-foreground">
+                      <Sparkles className="h-2.5 w-2.5" />
+                    </span>
+                    <span>{t}</span>
+                  </li>
+                ))}
+              </ul>
             </div>
           </div>
         </div>
