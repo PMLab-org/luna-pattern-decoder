@@ -5,14 +5,14 @@ import { ArrowRight } from "lucide-react";
 const plans = [
   {
     name: "Free",
-    price: "$0",
+    price: "US$0",
     blurb: "Track symptoms and see your basic pattern view.",
   },
   {
     name: "Founding Member",
-    price: "$75",
+    price: "US$75",
     suffix: "/year",
-    blurb: "$75/year for early adopters. Your price stays $75/year after launch (regular price will be $200/year).",
+    blurb: "US$75/year for early adopters. Your price stays US$75/year after launch (regular price will be US$200/year).",
     featured: true,
   },
 ];
