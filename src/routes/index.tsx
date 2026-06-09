@@ -425,19 +425,16 @@ function Index() {
           <div className="mt-14 grid items-start gap-8 md:grid-cols-12">
             {/* Featured — Lisa W */}
             <figure className="relative overflow-hidden rounded-[3rem] bg-card p-10 shadow-xl shadow-primary/5 transition-transform duration-300 hover:-translate-y-1 md:col-span-7 md:p-14">
-              <div aria-hidden className="absolute -right-16 -top-16 h-32 w-32 rounded-full bg-accent/60" />
+              <div
+                aria-hidden
+                className="absolute -right-16 -top-16 h-32 w-32 rounded-full opacity-70"
+                style={{ backgroundColor: "var(--luna-sage)" }}
+              />
               <div className="relative z-10">
-                <span
-                  aria-hidden
-                  className="block text-6xl leading-none text-primary/30"
-                  style={{ fontFamily: "'Lora', serif" }}
-                >
+                <span aria-hidden className="block font-serif text-6xl leading-none text-primary/30">
                   &ldquo;
                 </span>
-                <blockquote
-                  className="mt-4 text-xl italic leading-relaxed text-foreground md:text-2xl"
-                  style={{ fontFamily: "'Lora', serif" }}
-                >
+                <blockquote className="mt-4 text-base leading-relaxed text-foreground md:text-lg">
                   I find my interactions, conversations actually help me bring attention to parts of my experience I'd have otherwise missed — both somatically and mentally. And that in turn helps me gain a different and sometimes more helpful perspective on things and then make more congruent choices. I feel like I'm leaning in and working with myself more than I ever have. Quite liberating 🌻
                 </blockquote>
                 <figcaption className="mt-10 flex items-center gap-4">
@@ -455,17 +452,10 @@ function Index() {
             <div className="flex flex-col gap-8 md:col-span-5 md:mt-12">
               {/* Andrea */}
               <figure className="rounded-[2.5rem] border border-white/60 bg-card/70 p-8 shadow-lg shadow-primary/5 backdrop-blur transition-transform duration-300 hover:-translate-y-1">
-                <span
-                  aria-hidden
-                  className="block text-4xl leading-none text-primary/30"
-                  style={{ fontFamily: "'Lora', serif" }}
-                >
+                <span aria-hidden className="block font-serif text-4xl leading-none text-primary/30">
                   &ldquo;
                 </span>
-                <blockquote
-                  className="mt-2 text-lg leading-relaxed text-foreground/90"
-                  style={{ fontFamily: "'Lora', serif" }}
-                >
+                <blockquote className="mt-2 text-sm leading-relaxed text-foreground/90">
                   I feel like a sense of relief, a sense of knowing, a sense of clarity and inner peace that comes just from having it all mapped out for me.
                 </blockquote>
                 <figcaption className="mt-6 text-xs font-bold uppercase tracking-widest text-foreground">
@@ -477,17 +467,10 @@ function Index() {
 
               {/* Barbara */}
               <figure className="rounded-[2.5rem] border border-primary/15 bg-accent/40 p-8 shadow-sm transition-transform duration-300 hover:-translate-y-1">
-                <span
-                  aria-hidden
-                  className="block text-4xl leading-none text-primary/40"
-                  style={{ fontFamily: "'Lora', serif" }}
-                >
+                <span aria-hidden className="block font-serif text-4xl leading-none text-primary/40">
                   &ldquo;
                 </span>
-                <blockquote
-                  className="mt-2 text-lg leading-relaxed text-foreground/90"
-                  style={{ fontFamily: "'Lora', serif" }}
-                >
+                <blockquote className="mt-2 text-sm leading-relaxed text-foreground/90">
                   Yes! This is what I've been looking for! And I can't wait to show my MD that I'm not crazy and it's not in my head! It's like this is giving me the proof I need to get what I deserve!
                 </blockquote>
                 <figcaption className="mt-6 text-xs font-bold uppercase tracking-widest text-foreground">
@@ -512,68 +495,125 @@ function Index() {
       {/* CO-CREATION */}
       <section className="px-6 py-16 md:py-24">
         <div className="mx-auto max-w-[1200px]">
-          <span className="inline-flex w-fit items-center gap-2 rounded-full bg-accent px-3 py-1 text-xs font-medium text-accent-foreground">
-            <Sparkles className="h-3.5 w-3.5" /> Live beta · Co-created with you
-          </span>
-          <h2 className="mt-4 text-3xl font-semibold tracking-tight md:text-5xl">
-            Help shape the future of <span className="text-gradient-luna">menopause care</span>
-          </h2>
-          <p className="mt-5 max-w-3xl text-muted-foreground">
-            Luna and The Perimenopause Lab are in active development, already used by over 90 women in a live beta.
-          </p>
+          <div className="mx-auto max-w-2xl text-center">
+            <span className="inline-flex items-center gap-2 rounded-full bg-accent px-3 py-1 text-xs font-medium text-accent-foreground">
+              <Sparkles className="h-3.5 w-3.5" /> Live beta · Co-created with you
+            </span>
+            <h2 className="mt-4 text-3xl font-semibold tracking-tight md:text-5xl">
+              Help shape the future of{" "}
+              <span className="text-gradient-luna">menopause care</span>
+            </h2>
+            <p className="mt-4 text-muted-foreground">
+              Luna and The Perimenopause Lab are in active development, already used by over 90 women in a live beta.
+            </p>
+          </div>
 
-          <div className="mt-10 grid gap-6 md:grid-cols-2 md:items-start">
-            <div className="flex items-start gap-4 rounded-2xl border border-border bg-card p-5 shadow-[var(--shadow-card)]">
-              <img
-                src={founderImg}
-                alt="Portrait of Luna's founder"
-                width={56}
-                height={56}
-                loading="lazy"
-                className="h-14 w-14 rounded-full object-cover"
+          <div className="mt-14 grid items-start gap-8 md:grid-cols-12">
+            {/* Featured — Founder letter */}
+            <article className="relative overflow-hidden rounded-[3rem] bg-card p-10 shadow-xl shadow-primary/5 md:col-span-7 md:p-14">
+              <div
+                aria-hidden
+                className="absolute -left-20 -bottom-20 h-48 w-48 rounded-full opacity-60"
+                style={{ backgroundColor: "var(--luna-sage)" }}
               />
-              <div className="flex flex-col">
-                <div>
-                <p className="text-sm leading-relaxed text-foreground">
+              <div className="relative z-10">
+                <span className="text-xs font-semibold uppercase tracking-widest text-primary">
+                  A note from the founder
+                </span>
+                <p className="mt-5 text-sm leading-relaxed text-foreground md:text-base">
                   When I began experiencing my own perimenopause symptoms, I was surprised by how scattered, shallow, and confusing the available information was. If I felt lost — even with a medical background — I knew countless women must be feeling the same.
                 </p>
-                <p className="mt-3 text-sm leading-relaxed text-foreground">
+                <p className="mt-3 text-sm leading-relaxed text-foreground md:text-base">
                   That's why I created The Perimenopause Lab. A space built to make this transition make sense. A space for real guidance, deeper education, and the next generation of tools — including an AI companion — to help you decode your symptoms and feel confident in your body again.
                 </p>
-                <p className="mt-3 text-sm leading-relaxed text-foreground">
+                <p className="mt-3 text-sm leading-relaxed text-foreground md:text-base">
                   Right now, Luna is in a live beta with women like you. Every conversation and every note you share helps us make this experience better for the next woman who comes through.
                 </p>
-                </div>
-                <p className="mt-4 text-xs text-muted-foreground">
-                  Daniella Remy — Founder, The Perimenopause Lab
-                </p>
-              </div>
-            </div>
-            <div className="grid gap-4 sm:grid-cols-3">
-              {[
-                { icon: HeartHandshake, title: "Your Feedback is Read", body: "Every message goes to a real person on our team. We review beta feedback weekly and share what's changing because of it." },
-                { icon: Eye, title: "You'll See Your Impact", body: "You'll get updates on which patterns in women's stories are shaping each new release—so you can see how your experience is moving the product forward." },
-                { icon: ShieldCheck, title: "You're Protected", body: "Your story is yours. Entries are encrypted, never sold, and never used to train external models—and you can opt out or delete your data anytime." },
-              ].map((c) => (
-                <div key={c.title} className="rounded-2xl border border-border bg-card p-5">
-                  <div className="grid h-9 w-9 place-items-center rounded-lg bg-accent text-accent-foreground">
-                    <c.icon className="h-4.5 w-4.5" />
+                <div className="mt-8 flex items-center gap-4">
+                  <img
+                    src={founderImg}
+                    alt="Portrait of Luna's founder, Daniella Remy"
+                    width={56}
+                    height={56}
+                    loading="lazy"
+                    className="h-14 w-14 rounded-full object-cover ring-2 ring-background"
+                  />
+                  <div>
+                    <p className="text-sm font-semibold text-foreground">Daniella Remy</p>
+                    <p className="text-xs uppercase tracking-widest text-muted-foreground">
+                      Founder · The Perimenopause Lab
+                    </p>
                   </div>
-                  <h3 className="mt-3 text-sm font-semibold">{c.title}</h3>
-                  <p className="mt-1.5 text-xs leading-relaxed text-muted-foreground">{c.body}</p>
                 </div>
-              ))}
+              </div>
+            </article>
+
+            {/* Supporting column */}
+            <div className="flex flex-col gap-6 md:col-span-5 md:mt-12">
+              {[
+                {
+                  icon: HeartHandshake,
+                  title: "Your Feedback is Read",
+                  body: "Every message goes to a real person on our team. We review beta feedback weekly and share what's changing because of it.",
+                  tone: "card" as const,
+                },
+                {
+                  icon: Eye,
+                  title: "You'll See Your Impact",
+                  body: "You'll get updates on which patterns in women's stories are shaping each new release—so you can see how your experience is moving the product forward.",
+                  tone: "translucent" as const,
+                },
+                {
+                  icon: ShieldCheck,
+                  title: "You're Protected",
+                  body: "Your story is yours. Entries are encrypted, never sold, and never used to train external models—and you can opt out or delete your data anytime.",
+                  tone: "sage" as const,
+                },
+              ].map((c) => {
+                const surface =
+                  c.tone === "sage"
+                    ? "border border-transparent"
+                    : c.tone === "translucent"
+                      ? "border border-white/60 bg-card/70 backdrop-blur shadow-lg shadow-primary/5"
+                      : "border border-border bg-card shadow-[var(--shadow-card)]";
+                const iconSurface =
+                  c.tone === "sage"
+                    ? "bg-background text-primary"
+                    : "bg-accent text-accent-foreground";
+                return (
+                  <div
+                    key={c.title}
+                    className={`flex items-start gap-4 rounded-[2rem] p-6 transition-transform duration-300 hover:-translate-y-1 ${surface}`}
+                    style={
+                      c.tone === "sage"
+                        ? { backgroundColor: "var(--luna-sage)" }
+                        : undefined
+                    }
+                  >
+                    <div className={`grid h-10 w-10 shrink-0 place-items-center rounded-xl ${iconSurface}`}>
+                      <c.icon className="h-5 w-5" />
+                    </div>
+                    <div>
+                      <h3 className="text-sm font-semibold text-foreground">{c.title}</h3>
+                      <p className="mt-1.5 text-xs leading-relaxed text-muted-foreground">
+                        {c.body}
+                      </p>
+                    </div>
+                  </div>
+                );
+              })}
             </div>
           </div>
-        </div>
-        <div className="mx-auto mt-10 flex max-w-[1200px] justify-center">
-          <Button
-            asChild
-            size="lg"
-            className="h-12 min-w-[200px] bg-gradient-luna px-6 text-base text-primary-foreground shadow-[var(--shadow-soft)] hover:opacity-90"
-          >
-            <a href="#start">Join the beta</a>
-          </Button>
+
+          <div className="mt-12 flex justify-center">
+            <Button
+              asChild
+              size="lg"
+              className="h-12 min-w-[200px] bg-gradient-luna px-6 text-base text-primary-foreground shadow-[var(--shadow-soft)] hover:opacity-90"
+            >
+              <a href="#start">Join the beta</a>
+            </Button>
+          </div>
         </div>
       </section>
 
