@@ -416,48 +416,93 @@ function Index() {
         <div className="mx-auto max-w-[1200px]">
           <div className="mx-auto max-w-2xl text-center">
             <h2 className="text-3xl font-semibold tracking-tight md:text-5xl">
-              Women are already finding clarity
+              Women are already finding{" "}
+              <span className="text-gradient-luna">clarity</span>
             </h2>
-            <p className="mt-4 text-muted-foreground">
-              Voices from the Luna beta.
-            </p>
+            <p className="mt-4 text-muted-foreground">Voices from the Luna beta.</p>
           </div>
-          <div className="mt-12 grid items-start gap-6 md:grid-cols-3">
-            {[
-              {
-                quote:
-                  "I find my interactions, conversations actually help me bring attention to parts of my experience I'd have otherwise missed — both somatically and mentally. And that in turn helps me gain a different and sometimes more helpful perspective on things and then make more congruent choices. I feel like I'm leaning in and working with myself more than I ever have. Quite liberating 🌻",
-                name: "Lisa W",
-                meta: "47, Australia",
-              },
-              {
-                quote:
-                  "I feel like a sense of relief, a sense of knowing, a sense of clarity and inner peace that comes just from having it all mapped out for me.",
-                name: "Andrea",
-                meta: "48, USA",
-              },
-              {
-                quote:
-                  "Yes! This is what I've been looking for! And I can't wait to show my MD that I'm not crazy and it's not in my head! It's like this is giving me the proof I need to get what I deserve!",
-                name: "Barbara",
-                meta: "51, Canada",
-              },
-            ].map((t) => (
-              <figure
-                key={t.name}
-                className="rounded-2xl border border-border bg-card p-7 shadow-[var(--shadow-card)]"
-              >
-                <span aria-hidden className="block text-5xl leading-none text-primary/40">
+
+          <div className="mt-14 grid items-start gap-8 md:grid-cols-12">
+            {/* Featured — Lisa W */}
+            <figure className="relative overflow-hidden rounded-[3rem] bg-card p-10 shadow-xl shadow-primary/5 transition-transform duration-300 hover:-translate-y-1 md:col-span-7 md:p-14">
+              <div aria-hidden className="absolute -right-16 -top-16 h-32 w-32 rounded-full bg-accent/60" />
+              <div className="relative z-10">
+                <span
+                  aria-hidden
+                  className="block text-6xl leading-none text-primary/30"
+                  style={{ fontFamily: "'Lora', serif" }}
+                >
                   &ldquo;
                 </span>
-                <blockquote className="mt-2 text-sm leading-relaxed text-foreground">
-                  {t.quote}
+                <blockquote
+                  className="mt-4 text-xl italic leading-relaxed text-foreground md:text-2xl"
+                  style={{ fontFamily: "'Lora', serif" }}
+                >
+                  I find my interactions, conversations actually help me bring attention to parts of my experience I'd have otherwise missed — both somatically and mentally. And that in turn helps me gain a different and sometimes more helpful perspective on things and then make more congruent choices. I feel like I'm leaning in and working with myself more than I ever have. Quite liberating 🌻
                 </blockquote>
-                <figcaption className="mt-5 text-xs text-muted-foreground">
-                  <span className="font-semibold text-foreground">{t.name}</span> · {t.meta}
+                <figcaption className="mt-10 flex items-center gap-4">
+                  <span className="h-px w-12 bg-primary/30" />
+                  <span className="text-xs font-semibold uppercase tracking-widest text-foreground">
+                    Lisa W
+                    <span className="mx-2 font-normal text-muted-foreground">|</span>
+                    47, Australia
+                  </span>
+                </figcaption>
+              </div>
+            </figure>
+
+            {/* Supporting column */}
+            <div className="flex flex-col gap-8 md:col-span-5 md:mt-12">
+              {/* Andrea */}
+              <figure className="rounded-[2.5rem] border border-white/60 bg-card/70 p-8 shadow-lg shadow-primary/5 backdrop-blur transition-transform duration-300 hover:-translate-y-1">
+                <span
+                  aria-hidden
+                  className="block text-4xl leading-none text-primary/30"
+                  style={{ fontFamily: "'Lora', serif" }}
+                >
+                  &ldquo;
+                </span>
+                <blockquote
+                  className="mt-2 text-lg leading-relaxed text-foreground/90"
+                  style={{ fontFamily: "'Lora', serif" }}
+                >
+                  I feel like a sense of relief, a sense of knowing, a sense of clarity and inner peace that comes just from having it all mapped out for me.
+                </blockquote>
+                <figcaption className="mt-6 text-xs font-bold uppercase tracking-widest text-foreground">
+                  Andrea
+                  <span className="mx-1 font-normal text-muted-foreground">/</span>
+                  48, USA
                 </figcaption>
               </figure>
-            ))}
+
+              {/* Barbara */}
+              <figure className="rounded-[2.5rem] border border-primary/15 bg-accent/40 p-8 shadow-sm transition-transform duration-300 hover:-translate-y-1">
+                <span
+                  aria-hidden
+                  className="block text-4xl leading-none text-primary/40"
+                  style={{ fontFamily: "'Lora', serif" }}
+                >
+                  &ldquo;
+                </span>
+                <blockquote
+                  className="mt-2 text-lg leading-relaxed text-foreground/90"
+                  style={{ fontFamily: "'Lora', serif" }}
+                >
+                  Yes! This is what I've been looking for! And I can't wait to show my MD that I'm not crazy and it's not in my head! It's like this is giving me the proof I need to get what I deserve!
+                </blockquote>
+                <figcaption className="mt-6 text-xs font-bold uppercase tracking-widest text-foreground">
+                  Barbara
+                  <span className="mx-1 font-normal text-muted-foreground">/</span>
+                  51, Canada
+                </figcaption>
+              </figure>
+            </div>
+          </div>
+
+          <div className="mt-14 flex justify-center">
+            <span className="rounded-full bg-accent px-6 py-2 text-sm font-medium tracking-wide text-accent-foreground">
+              Real experiences from our perimenopause community
+            </span>
           </div>
         </div>
       </section>
