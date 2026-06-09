@@ -553,10 +553,6 @@ function LegalPage() {
                 support@perimenopauselab.com
               </a>
             </p>
-            <p>
-              Legal mailing address: [Add PM Lab Inc. mailing address before
-              publishing]
-            </p>
           </div>
 
           <div className="mt-12 space-y-12">
