@@ -85,9 +85,10 @@ function Index() {
             <div className="mt-8 flex flex-col items-start gap-3">
               <Button
                 size="lg"
+                asChild
                 className="h-12 min-w-[200px] bg-gradient-luna px-6 text-base text-primary-foreground shadow-[var(--shadow-soft)] hover:opacity-90"
               >
-                Start Your First Entry
+                <a href="#start">Start Your First Entry</a>
               </Button>
               <p className="text-sm text-muted-foreground">
                 Five check-ins unlock your first meaningful pattern report. Ongoing entries help Luna track how your symptoms connect and change over time.
@@ -354,10 +355,20 @@ function Index() {
           <p className="mx-auto mt-10 max-w-2xl text-center text-sm text-muted-foreground">
             Your first pattern report unlocks at check-in five. Ongoing entries help Luna track how your symptoms connect and change over time.
           </p>
+          <div className="mt-8 flex flex-col items-center gap-3 sm:flex-row sm:justify-center">
+            <Button
+              asChild
+              size="lg"
+              className="h-12 min-w-[200px] bg-gradient-luna px-6 text-base text-primary-foreground shadow-[var(--shadow-soft)] hover:opacity-90"
+            >
+              <a href="#start">Start Your First Entry</a>
+            </Button>
+            <Button asChild variant="ghost" size="lg" className="h-12 px-6 text-base">
+              <Link to="/pricing">See pricing →</Link>
+            </Button>
+          </div>
         </div>
       </section>
-
-      <PricingPreview />
 
       {/* TRUST */}
       <section className="px-6 py-16 md:py-24">
@@ -399,6 +410,59 @@ function Index() {
           </div>
         </div>
       </section>
+
+      {/* TESTIMONIALS */}
+      <section className="px-6 py-16 md:py-24">
+        <div className="mx-auto max-w-[1200px]">
+          <div className="mx-auto max-w-2xl text-center">
+            <h2 className="text-3xl font-semibold tracking-tight md:text-5xl">
+              Women are already finding clarity
+            </h2>
+            <p className="mt-4 text-muted-foreground">
+              Voices from the Luna beta.
+            </p>
+          </div>
+          <div className="mt-12 grid items-start gap-6 md:grid-cols-3">
+            {[
+              {
+                quote:
+                  "I find my interactions, conversations actually help me bring attention to parts of my experience I'd have otherwise missed — both somatically and mentally. And that in turn helps me gain a different and sometimes more helpful perspective on things and then make more congruent choices. I feel like I'm leaning in and working with myself more than I ever have. Quite liberating 🌻",
+                name: "Lisa W",
+                meta: "47, Australia",
+              },
+              {
+                quote:
+                  "I feel like a sense of relief, a sense of knowing, a sense of clarity and inner peace that comes just from having it all mapped out for me.",
+                name: "Andrea",
+                meta: "48, USA",
+              },
+              {
+                quote:
+                  "Yes! This is what I've been looking for! And I can't wait to show my MD that I'm not crazy and it's not in my head! It's like this is giving me the proof I need to get what I deserve!",
+                name: "Barbara",
+                meta: "51, Canada",
+              },
+            ].map((t) => (
+              <figure
+                key={t.name}
+                className="rounded-2xl border border-border bg-card p-7 shadow-[var(--shadow-card)]"
+              >
+                <span aria-hidden className="block text-5xl leading-none text-primary/40">
+                  &ldquo;
+                </span>
+                <blockquote className="mt-2 text-sm leading-relaxed text-foreground">
+                  {t.quote}
+                </blockquote>
+                <figcaption className="mt-5 text-xs text-muted-foreground">
+                  <span className="font-semibold text-foreground">{t.name}</span> · {t.meta}
+                </figcaption>
+              </figure>
+            ))}
+          </div>
+        </div>
+      </section>
+
+      <PricingPreview />
 
       {/* CO-CREATION */}
       <section className="px-6 py-16 md:py-24">
@@ -463,7 +527,7 @@ function Index() {
             size="lg"
             className="h-12 min-w-[200px] bg-gradient-luna px-6 text-base text-primary-foreground shadow-[var(--shadow-soft)] hover:opacity-90"
           >
-            <a href="#start">Start Your First Entry</a>
+            <a href="#start">Join the beta</a>
           </Button>
         </div>
       </section>
@@ -499,6 +563,15 @@ function Index() {
               See all FAQs →
             </Link>
           </p>
+          <div className="mt-8 flex justify-center">
+            <Button
+              asChild
+              size="lg"
+              className="h-12 min-w-[220px] bg-gradient-luna px-6 text-base text-primary-foreground shadow-[var(--shadow-soft)] hover:opacity-90"
+            >
+              <a href="#start">Ready when you are — Start Your First Entry</a>
+            </Button>
+          </div>
         </div>
       </section>
 
@@ -514,16 +587,25 @@ function Index() {
           <div className="mt-8 flex flex-col items-center gap-4">
             <Button
               size="lg"
+              asChild
               className="h-12 min-w-[220px] bg-background px-6 text-base text-primary hover:bg-background/90"
             >
-              Start Your First Entry
+              <a href="#start">Start Your First Entry</a>
             </Button>
-            <Link
-              to="/for-clinicians"
-              className="text-sm text-primary-foreground underline underline-offset-4"
-            >
-              Are you a clinician?
-            </Link>
+            <div className="flex flex-wrap items-center justify-center gap-x-6 gap-y-2 text-sm">
+              <Link
+                to="/pricing"
+                className="text-primary-foreground underline underline-offset-4"
+              >
+                Read founding member pricing →
+              </Link>
+              <Link
+                to="/for-clinicians"
+                className="text-primary-foreground underline underline-offset-4"
+              >
+                Are you a clinician?
+              </Link>
+            </div>
           </div>
         </div>
       </section>
