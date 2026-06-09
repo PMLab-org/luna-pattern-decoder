@@ -431,10 +431,10 @@ function Index() {
                 style={{ backgroundColor: "var(--luna-sage)" }}
               />
               <div className="relative z-10">
-                <span aria-hidden className="block font-serif text-6xl leading-none text-primary/30">
+                <span aria-hidden className="block font-serif text-4xl leading-none text-primary/30">
                   &ldquo;
                 </span>
-                <blockquote className="mt-4 text-base leading-relaxed text-foreground md:text-lg">
+                <blockquote className="mt-4 text-sm leading-relaxed text-foreground">
                   I find my interactions, conversations actually help me bring attention to parts of my experience I'd have otherwise missed — both somatically and mentally. And that in turn helps me gain a different and sometimes more helpful perspective on things and then make more congruent choices. I feel like I'm leaning in and working with myself more than I ever have. Quite liberating 🌻
                 </blockquote>
                 <figcaption className="mt-10 flex items-center gap-4">
@@ -520,13 +520,13 @@ function Index() {
                 <span className="text-xs font-semibold uppercase tracking-widest text-primary">
                   A note from the founder
                 </span>
-                <p className="mt-5 text-sm leading-relaxed text-foreground md:text-base">
+                <p className="mt-5 text-sm leading-relaxed text-foreground">
                   When I began experiencing my own perimenopause symptoms, I was surprised by how scattered, shallow, and confusing the available information was. If I felt lost — even with a medical background — I knew countless women must be feeling the same.
                 </p>
-                <p className="mt-3 text-sm leading-relaxed text-foreground md:text-base">
+                <p className="mt-3 text-sm leading-relaxed text-foreground">
                   That's why I created The Perimenopause Lab. A space built to make this transition make sense. A space for real guidance, deeper education, and the next generation of tools — including an AI companion — to help you decode your symptoms and feel confident in your body again.
                 </p>
-                <p className="mt-3 text-sm leading-relaxed text-foreground md:text-base">
+                <p className="mt-3 text-sm leading-relaxed text-foreground">
                   Right now, Luna is in a live beta with women like you. Every conversation and every note you share helps us make this experience better for the next woman who comes through.
                 </p>
                 <div className="mt-8 flex items-center gap-4">
