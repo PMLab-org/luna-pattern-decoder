@@ -495,68 +495,125 @@ function Index() {
       {/* CO-CREATION */}
       <section className="px-6 py-16 md:py-24">
         <div className="mx-auto max-w-[1200px]">
-          <span className="inline-flex w-fit items-center gap-2 rounded-full bg-accent px-3 py-1 text-xs font-medium text-accent-foreground">
-            <Sparkles className="h-3.5 w-3.5" /> Live beta · Co-created with you
-          </span>
-          <h2 className="mt-4 text-3xl font-semibold tracking-tight md:text-5xl">
-            Help shape the future of <span className="text-gradient-luna">menopause care</span>
-          </h2>
-          <p className="mt-5 max-w-3xl text-muted-foreground">
-            Luna and The Perimenopause Lab are in active development, already used by over 90 women in a live beta.
-          </p>
+          <div className="mx-auto max-w-2xl text-center">
+            <span className="inline-flex items-center gap-2 rounded-full bg-accent px-3 py-1 text-xs font-medium text-accent-foreground">
+              <Sparkles className="h-3.5 w-3.5" /> Live beta · Co-created with you
+            </span>
+            <h2 className="mt-4 text-3xl font-semibold tracking-tight md:text-5xl">
+              Help shape the future of{" "}
+              <span className="text-gradient-luna">menopause care</span>
+            </h2>
+            <p className="mt-4 text-muted-foreground">
+              Luna and The Perimenopause Lab are in active development, already used by over 90 women in a live beta.
+            </p>
+          </div>
 
-          <div className="mt-10 grid gap-6 md:grid-cols-2 md:items-start">
-            <div className="flex items-start gap-4 rounded-2xl border border-border bg-card p-5 shadow-[var(--shadow-card)]">
-              <img
-                src={founderImg}
-                alt="Portrait of Luna's founder"
-                width={56}
-                height={56}
-                loading="lazy"
-                className="h-14 w-14 rounded-full object-cover"
+          <div className="mt-14 grid items-start gap-8 md:grid-cols-12">
+            {/* Featured — Founder letter */}
+            <article className="relative overflow-hidden rounded-[3rem] bg-card p-10 shadow-xl shadow-primary/5 md:col-span-7 md:p-14">
+              <div
+                aria-hidden
+                className="absolute -left-20 -bottom-20 h-48 w-48 rounded-full opacity-60"
+                style={{ backgroundColor: "var(--luna-sage)" }}
               />
-              <div className="flex flex-col">
-                <div>
-                <p className="text-sm leading-relaxed text-foreground">
+              <div className="relative z-10">
+                <span className="text-xs font-semibold uppercase tracking-widest text-primary">
+                  A note from the founder
+                </span>
+                <p className="mt-5 text-sm leading-relaxed text-foreground md:text-base">
                   When I began experiencing my own perimenopause symptoms, I was surprised by how scattered, shallow, and confusing the available information was. If I felt lost — even with a medical background — I knew countless women must be feeling the same.
                 </p>
-                <p className="mt-3 text-sm leading-relaxed text-foreground">
+                <p className="mt-3 text-sm leading-relaxed text-foreground md:text-base">
                   That's why I created The Perimenopause Lab. A space built to make this transition make sense. A space for real guidance, deeper education, and the next generation of tools — including an AI companion — to help you decode your symptoms and feel confident in your body again.
                 </p>
-                <p className="mt-3 text-sm leading-relaxed text-foreground">
+                <p className="mt-3 text-sm leading-relaxed text-foreground md:text-base">
                   Right now, Luna is in a live beta with women like you. Every conversation and every note you share helps us make this experience better for the next woman who comes through.
                 </p>
-                </div>
-                <p className="mt-4 text-xs text-muted-foreground">
-                  Daniella Remy — Founder, The Perimenopause Lab
-                </p>
-              </div>
-            </div>
-            <div className="grid gap-4 sm:grid-cols-3">
-              {[
-                { icon: HeartHandshake, title: "Your Feedback is Read", body: "Every message goes to a real person on our team. We review beta feedback weekly and share what's changing because of it." },
-                { icon: Eye, title: "You'll See Your Impact", body: "You'll get updates on which patterns in women's stories are shaping each new release—so you can see how your experience is moving the product forward." },
-                { icon: ShieldCheck, title: "You're Protected", body: "Your story is yours. Entries are encrypted, never sold, and never used to train external models—and you can opt out or delete your data anytime." },
-              ].map((c) => (
-                <div key={c.title} className="rounded-2xl border border-border bg-card p-5">
-                  <div className="grid h-9 w-9 place-items-center rounded-lg bg-accent text-accent-foreground">
-                    <c.icon className="h-4.5 w-4.5" />
+                <div className="mt-8 flex items-center gap-4">
+                  <img
+                    src={founderImg}
+                    alt="Portrait of Luna's founder, Daniella Remy"
+                    width={56}
+                    height={56}
+                    loading="lazy"
+                    className="h-14 w-14 rounded-full object-cover ring-2 ring-background"
+                  />
+                  <div>
+                    <p className="text-sm font-semibold text-foreground">Daniella Remy</p>
+                    <p className="text-xs uppercase tracking-widest text-muted-foreground">
+                      Founder · The Perimenopause Lab
+                    </p>
                   </div>
-                  <h3 className="mt-3 text-sm font-semibold">{c.title}</h3>
-                  <p className="mt-1.5 text-xs leading-relaxed text-muted-foreground">{c.body}</p>
                 </div>
-              ))}
+              </div>
+            </article>
+
+            {/* Supporting column */}
+            <div className="flex flex-col gap-6 md:col-span-5 md:mt-12">
+              {[
+                {
+                  icon: HeartHandshake,
+                  title: "Your Feedback is Read",
+                  body: "Every message goes to a real person on our team. We review beta feedback weekly and share what's changing because of it.",
+                  tone: "card" as const,
+                },
+                {
+                  icon: Eye,
+                  title: "You'll See Your Impact",
+                  body: "You'll get updates on which patterns in women's stories are shaping each new release—so you can see how your experience is moving the product forward.",
+                  tone: "translucent" as const,
+                },
+                {
+                  icon: ShieldCheck,
+                  title: "You're Protected",
+                  body: "Your story is yours. Entries are encrypted, never sold, and never used to train external models—and you can opt out or delete your data anytime.",
+                  tone: "sage" as const,
+                },
+              ].map((c) => {
+                const surface =
+                  c.tone === "sage"
+                    ? "border border-transparent"
+                    : c.tone === "translucent"
+                      ? "border border-white/60 bg-card/70 backdrop-blur shadow-lg shadow-primary/5"
+                      : "border border-border bg-card shadow-[var(--shadow-card)]";
+                const iconSurface =
+                  c.tone === "sage"
+                    ? "bg-background text-primary"
+                    : "bg-accent text-accent-foreground";
+                return (
+                  <div
+                    key={c.title}
+                    className={`flex items-start gap-4 rounded-[2rem] p-6 transition-transform duration-300 hover:-translate-y-1 ${surface}`}
+                    style={
+                      c.tone === "sage"
+                        ? { backgroundColor: "var(--luna-sage)" }
+                        : undefined
+                    }
+                  >
+                    <div className={`grid h-10 w-10 shrink-0 place-items-center rounded-xl ${iconSurface}`}>
+                      <c.icon className="h-5 w-5" />
+                    </div>
+                    <div>
+                      <h3 className="text-sm font-semibold text-foreground">{c.title}</h3>
+                      <p className="mt-1.5 text-xs leading-relaxed text-muted-foreground">
+                        {c.body}
+                      </p>
+                    </div>
+                  </div>
+                );
+              })}
             </div>
           </div>
-        </div>
-        <div className="mx-auto mt-10 flex max-w-[1200px] justify-center">
-          <Button
-            asChild
-            size="lg"
-            className="h-12 min-w-[200px] bg-gradient-luna px-6 text-base text-primary-foreground shadow-[var(--shadow-soft)] hover:opacity-90"
-          >
-            <a href="#start">Join the beta</a>
-          </Button>
+
+          <div className="mt-12 flex justify-center">
+            <Button
+              asChild
+              size="lg"
+              className="h-12 min-w-[200px] bg-gradient-luna px-6 text-base text-primary-foreground shadow-[var(--shadow-soft)] hover:opacity-90"
+            >
+              <a href="#start">Join the beta</a>
+            </Button>
+          </div>
         </div>
       </section>
 
