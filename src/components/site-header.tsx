@@ -35,7 +35,7 @@ export function SiteHeader() {
             asChild
             className="bg-gradient-luna text-primary-foreground transition hover:opacity-90"
           >
-            <a href="/#start">Start Your First Entry</a>
+            <a href="https://luna.perimenopauselab.com/" target="_blank" rel="noopener noreferrer">Start Your First Entry</a>
           </Button>
         </div>
       </div>
