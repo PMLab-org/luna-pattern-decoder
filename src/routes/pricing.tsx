@@ -274,7 +274,7 @@ function PricingPage() {
               size="lg"
               className="h-12 min-w-[200px] bg-background px-6 text-base text-primary hover:bg-background/90"
             >
-              <a href="/#start">Start free</a>
+              <a href="https://luna.perimenopauselab.com/" target="_blank" rel="noopener noreferrer">Start free</a>
             </Button>
             <Button
               asChild
@@ -345,7 +345,7 @@ function PriceCard({ plan }: { plan: Plan }) {
               {plan.cta}
             </a>
           ) : (
-            <a href="/#start">{plan.cta}</a>
+            <a href="https://luna.perimenopauselab.com/" target="_blank" rel="noopener noreferrer">{plan.cta}</a>
           )}
         </Button>
       </div>

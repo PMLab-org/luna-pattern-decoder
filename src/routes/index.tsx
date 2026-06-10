@@ -88,7 +88,7 @@ function Index() {
                 asChild
                 className="h-12 min-w-[200px] bg-gradient-luna px-6 text-base text-primary-foreground shadow-[var(--shadow-soft)] hover:opacity-90"
               >
-                <a href="#start">Start Your First Entry</a>
+                <a href="https://luna.perimenopauselab.com/" target="_blank" rel="noopener noreferrer">Start Your First Entry</a>
               </Button>
               <p className="text-sm text-muted-foreground">
                 Five check-ins unlock your first meaningful pattern report. Ongoing entries help Luna track how your symptoms connect and change over time.
@@ -361,7 +361,7 @@ function Index() {
               size="lg"
               className="h-12 min-w-[200px] bg-gradient-luna px-6 text-base text-primary-foreground shadow-[var(--shadow-soft)] hover:opacity-90"
             >
-              <a href="#start">Start Your First Entry</a>
+              <a href="https://luna.perimenopauselab.com/" target="_blank" rel="noopener noreferrer">Start Your First Entry</a>
             </Button>
             <Button asChild variant="ghost" size="lg" className="h-12 px-6 text-base">
               <Link to="/pricing">See pricing →</Link>
@@ -611,7 +611,7 @@ function Index() {
               size="lg"
               className="h-12 min-w-[200px] bg-gradient-luna px-6 text-base text-primary-foreground shadow-[var(--shadow-soft)] hover:opacity-90"
             >
-              <a href="#start">Join the beta</a>
+              <a href="https://buy.stripe.com/3cI3cxgJn8b0gAEf0x4F200" target="_blank" rel="noopener noreferrer">Join the beta</a>
             </Button>
           </div>
         </div>
@@ -654,7 +654,7 @@ function Index() {
               size="lg"
               className="h-12 min-w-[220px] bg-gradient-luna px-6 text-base text-primary-foreground shadow-[var(--shadow-soft)] hover:opacity-90"
             >
-              <a href="#start">Ready when you are — Start Your First Entry</a>
+              <a href="https://luna.perimenopauselab.com/" target="_blank" rel="noopener noreferrer">Ready when you are — Start Your First Entry</a>
             </Button>
           </div>
         </div>
@@ -675,7 +675,7 @@ function Index() {
               asChild
               className="h-12 min-w-[220px] bg-background px-6 text-base text-primary hover:bg-background/90"
             >
-              <a href="#start">Start Your First Entry</a>
+              <a href="https://luna.perimenopauselab.com/" target="_blank" rel="noopener noreferrer">Start Your First Entry</a>
             </Button>
             <div className="flex flex-wrap items-center justify-center gap-x-6 gap-y-2 text-sm">
               <Link
