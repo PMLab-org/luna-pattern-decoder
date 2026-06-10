@@ -9,6 +9,9 @@ import {
 } from "@/components/ui/accordion";
 import { SiteHeader } from "@/components/site-header";
 import { SiteFooter } from "@/components/site-footer";
+import subscribeQr from "@/assets/subscribe-qr.asset.json";
+
+const STRIPE_CHECKOUT_URL = "https://buy.stripe.com/3cI3cxgJn8b0gAEf0x4F200";
 
 export const Route = createFileRoute("/pricing")({
   component: PricingPage,
@@ -278,7 +281,9 @@ function PricingPage() {
               variant="outline"
               className="h-12 min-w-[200px] border-primary-foreground/40 bg-transparent px-6 text-base text-primary-foreground hover:bg-primary-foreground/10 hover:text-primary-foreground"
             >
-              <a href="/#start">Join as a founding member</a>
+              <a href={STRIPE_CHECKOUT_URL} target="_blank" rel="noopener noreferrer">
+                Join as a founding member
+              </a>
             </Button>
           </div>
         </div>
@@ -334,9 +339,26 @@ function PriceCard({ plan }: { plan: Plan }) {
           }
           variant={plan.ctaVariant === "primary" ? "default" : "outline"}
         >
-          <a href="/#start">{plan.cta}</a>
+          {plan.featured ? (
+            <a href={STRIPE_CHECKOUT_URL} target="_blank" rel="noopener noreferrer">
+              {plan.cta}
+            </a>
+          ) : (
+            <a href="/#start">{plan.cta}</a>
+          )}
         </Button>
       </div>
+      {plan.featured && (
+        <div className="mt-6 hidden flex-col items-center gap-2 border-t border-border/60 pt-6 md:flex">
+          <img
+            src={subscribeQr.url}
+            alt="Scan to subscribe to Luna founding member plan"
+            className="h-28 w-28 rounded-lg"
+            loading="lazy"
+          />
+          <p className="text-xs text-muted-foreground">Or scan to subscribe on mobile</p>
+        </div>
+      )}
     </div>
   );
 
