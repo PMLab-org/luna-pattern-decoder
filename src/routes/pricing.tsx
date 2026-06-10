@@ -50,10 +50,11 @@ const plans: Plan[] = [
     tagline: "Start listening to your body.",
     price: "US$0",
     features: [
-      "Unlimited symptom tracking",
+      "Limited symptom tracking",
       "Daily check-ins",
       "Limited weekly summaries",
       "Basic pattern view",
+      "Real, useful tool — not a teaser",
     ],
     cta: "Start Your First Entry",
     ctaVariant: "outline",
