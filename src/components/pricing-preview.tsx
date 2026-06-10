@@ -12,7 +12,7 @@ const plans = [
     name: "Founding Member",
     price: "US$75",
     suffix: "/year",
-    blurb: "US$75/year for early adopters. Your price stays US$75/year after launch (regular price will be US$200/year).",
+    blurb: "Your price stays US$75/year after launch (regular price will be US$200/year).",
     featured: true,
   },
 ];
