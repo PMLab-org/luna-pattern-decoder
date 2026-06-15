@@ -9,7 +9,7 @@ import {
 } from "@/components/ui/accordion";
 import { SiteHeader } from "@/components/site-header";
 import { SiteFooter } from "@/components/site-footer";
-import subscribeQr from "@/assets/subscribe-qr.asset.json";
+
 
 const STRIPE_CHECKOUT_URL = "https://buy.stripe.com/3cI3cxgJn8b0gAEf0x4F200";
 
@@ -349,30 +349,19 @@ function PriceCard({ plan }: { plan: Plan }) {
           )}
         </Button>
       </div>
-      {plan.featured && (
-        <div className="mt-6 hidden flex-col items-center gap-2 border-t border-border/60 pt-6 md:flex">
-          <img
-            src={subscribeQr.url}
-            alt="Scan to subscribe to Luna founding member plan"
-            className="h-28 w-28 rounded-lg"
-            loading="lazy"
-          />
-          <p className="text-xs text-muted-foreground">Or scan to subscribe on mobile</p>
-        </div>
-      )}
     </div>
   );
 
   if (plan.featured) {
     return (
-      <div className="relative overflow-hidden rounded-2xl bg-gradient-luna p-[1.5px] shadow-[var(--shadow-soft)] md:-my-2">
-        <div className="h-full rounded-[calc(1rem-1px)] bg-card">{inner}</div>
+      <div className="relative flex h-full overflow-hidden rounded-2xl bg-gradient-luna p-[1.5px] shadow-[var(--shadow-soft)]">
+        <div className="flex h-full flex-col rounded-[calc(1rem-1px)] bg-card">{inner}</div>
       </div>
     );
   }
 
   return (
-    <div className="rounded-2xl border border-border bg-card shadow-[var(--shadow-card)]">
+    <div className="flex h-full flex-col rounded-2xl border border-border bg-card shadow-[var(--shadow-card)]">
       {inner}
     </div>
   );
