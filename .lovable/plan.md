@@ -1,8 +1,9 @@
-Update all "Start Your First Entry" / "Start free" CTAs to point to `https://luna.perimenopauselab.com/` (open in new tab). Update the "Join the beta" CTA to point to the Stripe checkout URL `https://buy.stripe.com/3cI3cxgJn8b0gAEf0x4F200` (new tab).
+## Pricing Page Cleanup
 
-Files:
-- `src/components/site-header.tsx` — header "Start Your First Entry" → luna URL
-- `src/routes/index.tsx` — four "Start Your First Entry" / "Ready when you are…" links (lines 91, 364, 657, 678) → luna URL; "Join the beta" (line 614) → Stripe URL
-- `src/routes/pricing.tsx` — Free plan `PriceCard` CTA (line 348) and final CTA "Start free" (line 277) → luna URL
+### 1. Remove QR Code Block
+Delete the QR code image and "Or scan to subscribe on mobile" text that appears in the Founding Member card (currently hidden on mobile, visible on desktop).
 
-All external links get `target="_blank" rel="noopener noreferrer"`. Founding Member Stripe links remain unchanged.
+### 2. Align CTA Buttons
+Adjust the card layout so the "Start Your First Entry" and "Join as founding member" buttons sit at the same vertical position in both cards, regardless of differing content heights above them.
+
+**Files:** `src/routes/pricing.tsx` only.
