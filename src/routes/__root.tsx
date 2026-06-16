@@ -82,8 +82,8 @@ export const Route = createRootRouteWithContext<{ queryClient: QueryClient }>()(
       { name: "twitter:site", content: "@Lovable" },
       { name: "twitter:title", content: "Lovable App" },
       { name: "twitter:description", content: "Luna is an AI perimenopause companion that connects the dots between your symptoms so you understand what your body is telling you." },
-      { property: "og:image", content: "https://pub-bb2e103a32db4e198524a2e9ed8f35b4.r2.dev/ec26c3a9-4d55-4456-b9c7-4774026b7e73/id-preview-f2330b89--d9e18d2f-a78d-4a09-933f-aaf6aca268da.lovable.app-1779102922804.png" },
-      { name: "twitter:image", content: "https://pub-bb2e103a32db4e198524a2e9ed8f35b4.r2.dev/ec26c3a9-4d55-4456-b9c7-4774026b7e73/id-preview-f2330b89--d9e18d2f-a78d-4a09-933f-aaf6aca268da.lovable.app-1779102922804.png" },
+      { property: "og:image", content: "https://storage.googleapis.com/gpt-engineer-file-uploads/TsbQkUkpJIZmordIioaItktAQ8k2/social-images/social-1781617046862-Luna_Ad.webp" },
+      { name: "twitter:image", content: "https://storage.googleapis.com/gpt-engineer-file-uploads/TsbQkUkpJIZmordIioaItktAQ8k2/social-images/social-1781617046862-Luna_Ad.webp" },
     ],
     links: [
       {
