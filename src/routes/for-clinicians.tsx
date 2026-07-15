@@ -98,9 +98,9 @@ function ForCliniciansPage() {
               <span className="grid h-10 w-10 place-items-center rounded-lg bg-muted text-foreground">
                 <Icon className="h-5 w-5" />
               </span>
-              <h3 className="mt-4 text-lg font-semibold tracking-tight">
+              <h2 className="mt-4 text-lg font-semibold tracking-tight">
                 {title}
-              </h3>
+              </h2>
               <p className="mt-2 text-sm leading-relaxed text-muted-foreground">
                 {body}
               </p>
