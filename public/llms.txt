@@ -1,0 +1,13 @@
+# Luna by PM Lab
+
+> Luna is an AI perimenopause companion that connects the dots between your symptoms so you understand what your body is telling you.
+
+Luna, created by PM Lab, lets you speak or type what you're feeling. It organizes entries into symptom trends, clinical-language summaries, and reports you can share with your practitioner. Luna is clinical decision support, not a diagnostic tool.
+
+## Pages
+
+- [Home](/): Overview of Luna and how pattern tracking works.
+- [Pricing](/pricing): Plans and pricing for Luna.
+- [For Clinicians](/for-clinicians): How Luna supports perimenopause care in practice.
+- [FAQ](/faq): Answers about PM Lab, Luna, tracking, insights, and privacy.
+- [Legal](/legal): Privacy policy and terms.
