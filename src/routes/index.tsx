@@ -28,7 +28,7 @@ export const Route = createFileRoute("/")({
   component: Index,
   head: () => ({
     meta: [
-      { title: "Luna by PM Lab — See the pattern in your perimenopause symptoms" },
+      { title: "Luna by PM Lab — Perimenopause Symptom Patterns" },
       {
         name: "description",
         content:
