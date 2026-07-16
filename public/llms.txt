@@ -9,5 +9,6 @@ Luna, created by PM Lab, lets you speak or type what you're feeling. It organize
 - [Home](/): Overview of Luna and how pattern tracking works.
 - [Pricing](/pricing): Plans and pricing for Luna.
 - [For Clinicians](/for-clinicians): How Luna supports perimenopause care in practice.
+- [Perimenopause Quiz](/quiz): Free 12-question symptom self-assessment.
 - [FAQ](/faq): Answers about PM Lab, Luna, tracking, insights, and privacy.
 - [Legal](/legal): Privacy policy and terms.
