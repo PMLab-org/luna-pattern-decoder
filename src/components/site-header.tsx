@@ -30,6 +30,13 @@ export function SiteHeader() {
           >
             For Clinicians
           </Link>
+          <Link
+            to="/quiz"
+            className="text-foreground/80 transition hover:text-foreground"
+            activeProps={{ className: "text-foreground" }}
+          >
+            Quiz
+          </Link>
           </nav>
           <Button
             asChild
