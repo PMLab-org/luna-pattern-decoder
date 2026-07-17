@@ -73,7 +73,6 @@ export const Route = createRootRouteWithContext<{ queryClient: QueryClient }>()(
       { charSet: "utf-8" },
       { name: "viewport", content: "width=device-width, initial-scale=1" },
       { title: "Luna — AI Perimenopause Companion" },
-      { name: "google-site-verification", content: "Ypd21r7fnUJ_dgWC8INdmcQjMVvelWsMYUzD1zKSx_s" },
       { name: "description", content: "Luna is an AI perimenopause companion that connects the dots between your symptoms so you understand what your body is telling you." },
       { name: "author", content: "PM Lab" },
       { property: "og:title", content: "Luna — AI Perimenopause Companion" },
