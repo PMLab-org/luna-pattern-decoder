@@ -83,6 +83,7 @@ export const Route = createRootRouteWithContext<{ queryClient: QueryClient }>()(
       { name: "twitter:description", content: "Luna is an AI perimenopause companion that connects the dots between your symptoms so you understand what your body is telling you." },
       { property: "og:image", content: "https://storage.googleapis.com/gpt-engineer-file-uploads/TsbQkUkpJIZmordIioaItktAQ8k2/social-images/social-1781617046862-Luna_Ad.webp" },
       { name: "twitter:image", content: "https://storage.googleapis.com/gpt-engineer-file-uploads/TsbQkUkpJIZmordIioaItktAQ8k2/social-images/social-1781617046862-Luna_Ad.webp" },
+      { name: "google-site-verification", content: "HsHHNA5bTtkXW7WEY0FI3ytAwhWWPI2xW8dX7iv4VoQ" },
     ],
     links: [
       {
